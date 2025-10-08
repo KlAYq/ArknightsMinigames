@@ -1,0 +1,75 @@
+.guess-input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .guess-input-container input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .confirm-btn {
+    margin-left: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suggestions {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background: #1a1a1a;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    border: 1px solid #333;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .suggestions li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .suggestions li:hover {
+    background: #333;
+  }
+  
+  .suggestions {
+    border: 1px solid #ccc;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+  }
+  
+  .suggestions li {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+  }
+  
+  .suggestions li:hover {
+    background: #ff5309;
+  }
+  
+  .suggestion-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 8px;
+  }

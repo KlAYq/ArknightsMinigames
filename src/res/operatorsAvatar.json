@@ -1,0 +1,32 @@
+{
+  "char_002_amiya": {
+    "name": "Amiya",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_002_amiya.png",
+    "emojis": [
+      ["🐰", "🔮", "🐎", "💥"],
+      ["🐇", "⚡", "🧠", "🌌"]
+    ]
+  },
+  "char_003_kalts": {
+    "name": "Kal'tsit",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_003_kalts.png",
+    "emojis": [
+      ["🐍", "🧬", "💉", "🧠"]
+    ]
+  },
+  "char_010_chen": {
+    "name": "Ch'en",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_010_chen.png",
+    "emojis": [
+      ["🐉", "⚔️", "💥", "🚓"],
+      ["🐲", "🗡️", "💢", "🏙️"]
+    ]
+  },
+  "char_009_12fce": {
+    "name": "12F",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_009_12fce.png",
+    "emojis": [
+      ["🐱", "💣", "💥", "🎩"]
+    ]
+  }
+}
