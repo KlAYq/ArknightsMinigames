@@ -13,14 +13,25 @@
   }
   
   .confirm-btn {
+    background-image: url("/src/res/confirm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-left: 10px;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: none;
-    background: #00aaff;
-    color: white;
+    width: 40px;
+    height: 40px;
+    border: none;             
     cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.2s ease; /* for hover animation */
+    cursor: pointer;
+    filter: brightness(0) invert(1);
   }
+
+  .confirm-btn:hover {
+    transform: scale(1.1);
+  }
+  
   
   .suggestions {
     position: absolute;

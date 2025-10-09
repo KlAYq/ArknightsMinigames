@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import GuessInput from "../components/guessInput";
 import "./guessOperator.css";
 import operatorData from "../res/operatorsAvatar.json";
-
+import questionIcon from "../res/questionMark.png"; 
 function GuessOperator() {
     const [revealed, setRevealed] = useState(1);
     const [guesses, setGuesses] = useState([]);
@@ -51,8 +51,12 @@ function GuessOperator() {
 
         <div className="emoji-container">
             {emoji.map((emoji, i) => (
-            <span key={i} className={`emoji ${i < revealed ? "show" : "hidden"}`}>
-                {i < revealed ? emoji : "❓"}
+            <span key={i} className={`emoji-slot ${i < revealed ? "show" : "hidden"}`}>
+                {i < revealed ? (
+                <span className="emoji">{emoji}</span>
+                ) : (
+                <img src={questionIcon} alt="Hidden" className="hidden-icon" />
+                )}
             </span>
             ))}
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./guessInput.css";
 import operatorData from "../res/operatorsAvatar.json";
-
+import confirmIcon from "../res/confirm.png";
 
   function GuessInput({ onGuess, disabled, operators }) {
     const [input, setInput] = useState("");
@@ -36,7 +36,8 @@ import operatorData from "../res/operatorsAvatar.json";
     };
   
     return (
-      <div className="guess-input-container">
+
+      <div className="guess-input-container" style={{ "flex-direction": `row`, display: `flex`, "justify-content": `center` }}>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -45,11 +46,11 @@ import operatorData from "../res/operatorsAvatar.json";
             onChange={handleChange}
             disabled={disabled}
           />
-          <button type="submit" className="confirm-btn">
-            confirm
-          </button>
+          
         </form>
-  
+        <button type="submit" className="confirm-btn">
+            {/* <img src={confirmIcon} alt="Confirm"/> */}
+          </button>
         {suggestions.length > 0 && (
           <ul className="suggestions">
             {suggestions.map((s, i) => (
