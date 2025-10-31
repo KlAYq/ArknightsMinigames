@@ -16,7 +16,7 @@ function App() {
       // backgroundPosition: 'center',
       // height: '100vh',
     }}>
-        <GameLogo />
+        <GameLogo/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/guess-operator" element={<GuessOperator />} />

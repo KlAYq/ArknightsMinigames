@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./guessInput.css";
-import operatorData from "../res/operatorsAvatar.json";
-import confirmIcon from "../res/confirm.png";
+import { Button, VStack } from "@chakra-ui/react"
 
   function GuessInput({ onGuess, disabled, operators }) {
     const [input, setInput] = useState("");
     const [suggestions, setSuggestions] = useState([]);
   
-  
+    const operatorList = Object.values(operators || {});
+
     const handleChange = (e) => {
       const value = e.target.value;
       setInput(value);
@@ -30,13 +30,27 @@ import confirmIcon from "../res/confirm.png";
     const handleSubmit = (e) => {
       e.preventDefault();
       if (!input.trim()) return;
-      onGuess(input.trim());
+
+      const match = operatorList.find(
+        (op) => op.name.toLowerCase() === input.trim().toLowerCase()
+      );
+
+      if (!match) {
+        console.log("Operator not found in the list!");
+        return;
+      }
+
+      onGuess({
+        name: match.name,
+        url: match.url,
+      });
+      // onGuess(input.trim());
       setInput("");
       setSuggestions([]);
     };
   
     return (
-
+      <VStack>
       <div className="guess-input-container" style={{ "flex-direction": `row`, display: `flex`, "justify-content": `center` }}>
         <form onSubmit={handleSubmit}>
           <input
@@ -48,11 +62,11 @@ import confirmIcon from "../res/confirm.png";
           />
           
         </form>
-        <button type="submit" className="confirm-btn">
-            {/* <img src={confirmIcon} alt="Confirm"/> */}
-          </button>
+        <Button variant="solid" className="confirm-btn" onClick={handleSubmit} ml={2} colorPalette="teal" size="lg" font={"bold"} >
+            Confirm
+        </Button>
         {suggestions.length > 0 && (
-          <ul className="suggestions">
+          <ul className="suggestions" align="center">
             {suggestions.map((s, i) => (
               <li key={i} onClick={() => handleSelect(s)}>
                 <img src={s.url} alt={s.name} className="suggestion-avatar" />
@@ -62,6 +76,7 @@ import confirmIcon from "../res/confirm.png";
           </ul>
         )}
       </div>
+      </VStack>
     );
   }
   

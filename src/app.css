@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     background-color: #0d0d0d;
-    color: #fff;
+    color: #590e0e;
   }
   
   .App {
@@ -13,6 +13,6 @@ body {
     text-align: center;
     min-height: 100vh;
     background-color: #0d0d0d;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
   }

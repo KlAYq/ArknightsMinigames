@@ -22,11 +22,210 @@
       ["🐲", "🗡️", "💢", "🏙️"]
     ]
   },
+  "char_1013_chen2": {
+  "name":"Ch'en The Holungday",
+  "url":"https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1013_chen2.png",
+  "emojis":[
+  ["🐲","🔫","💦","💢"]
+  ]
+  },
   "char_009_12fce": {
     "name": "12F",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_009_12fce.png",
     "emojis": [
       ["🐱", "💣", "💥", "🎩"]
+    ]
+  },
+  "char_017_huang": {
+    "name": "Blaze",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_017_huang.png",
+    "emojis": [
+      [
+        "🐱",
+        "🔥",
+        "🪚",
+        "🩸"
+      ]
+    ]
+  },
+  "char_1011_lava2": {
+    "name": "Lava the Purgatory",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1011_lava2.png",
+    "emojis": [
+      [
+        "🔥",
+        "👿",
+        "🌋",
+        "🪷"
+      ]
+    ]
+  },
+  "char_1012_skadi2": {
+    "name": "Skadi the Corrupting Heart",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1012_skadi2.png",
+    "emojis": [
+      [
+        "🐋",
+        "😢",
+        "🎶",
+        "💔"
+      ]
+    ]
+  },
+  "char_1014_nearl2": {
+    "name": "Nearl the Radiant Knight",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1014_nearl2.png",
+    "emojis": [
+      [
+        "🐴",
+        "🔆",
+        "💂",
+        "🥇"
+      ]
+    ]
+  },
+  "char_1016_agoat2": {
+    "name": "Eyjafjalla the Hvít Aska",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1016_agoat2.png",
+    "emojis": [
+      [
+        "🌋",
+        "🐐",
+        "🌿",
+        "☮️"
+      ]
+    ]
+  },
+  "char_1019_siege2": {
+    "name": "Vina Victoria",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1019_siege2.png",
+    "emojis": [
+      [
+        "🦁",
+        "⚔️",
+        "👸",
+        "🇬🇧"
+      ]
+    ]
+  },
+  "char_101_sora": {
+    "name": "Sora",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_101_sora.png",
+    "emojis": [
+      [
+        "🦊",
+        "🐰",
+        "✨️",
+        "🎙️"
+      ]
+    ]
+  },
+  "char_1020_reed2": {
+    "name": "Reed The Flame Shadow",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1020_reed2.png",
+    "emojis": [
+      [
+        "🐲",
+        "🔥",
+        "👭",
+        "💥"
+      ]
+    ]
+  },
+  "char_1021_kroos2": {
+    "name": "Kroos the Keen Glint",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1021_kroos2.png",
+    "emojis": [
+      [
+        "😄",
+        "🐰",
+        "🏹",
+        "👋"
+      ]
+    ]
+  },
+  "char_1023_ghost2": {
+    "name": "Specter the Unchained",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1023_ghost2.png",
+    "emojis": [
+      [
+        "👻",
+        "🍕",
+        "👭",
+        "⛓️"
+      ]
+    ]
+  },
+  "char_1024_hbisc2": {
+    "name": "Hibiscus the Purifier",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1024_hbisc2.png",
+    "emojis": [
+      [
+        "🌺",
+        "😈",
+        "🦯",
+        "✳️"
+      ]
+    ]
+  },
+  "char_1026_gvial2": {
+    "name": "Gavial the Invincible",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1026_gvial2.png",
+    "emojis": [
+      [
+        "🪚",
+        "🐊",
+        "💪",
+        "🏄️"
+      ]
+    ]
+  },
+  "char_1027_greyy2": {
+    "name": "Greyy the Lightningbearer",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1027_greyy2.png",
+    "emojis": [
+      [
+        "⚡️",
+        "🐶",
+        "💡",
+        "📟️"
+      ]
+    ]
+  },
+  "char_1028_texas2": {
+    "name": "Texas the Omertosa",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1028_texas2.png",
+    "emojis": [
+      [
+        "🐺",
+        "⏩️",
+        "⚔️",
+        "💫"
+      ]
+    ]
+  },
+  "char_1029_yato2": {
+    "name": "Kirin R Yato",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1029_yato2.png",
+    "emojis": [
+      [
+        "🦄",
+        "⚔️",
+        "🔄",
+        "⏩️"
+      ]
+    ]
+  },
+  "char_102_texas": {
+    "name": "Texas",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_102_texas.png",
+    "emojis": [
+      [
+        "🐺",
+        "🌧️",
+        "⚔️",
+        "🟩"
+      ]
     ]
   }
 }

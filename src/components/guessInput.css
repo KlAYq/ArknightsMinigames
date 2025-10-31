@@ -10,9 +10,10 @@
     border: none;
     outline: none;
     font-size: 1rem;
+    color:#1a1a1a
   }
   
-  .confirm-btn {
+  /* .confirm-btn {
     background-image: url("/src/res/confirm.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -23,15 +24,15 @@
     border: none;             
     cursor: pointer;
     background-color: transparent;
-    transition: transform 0.2s ease; /* for hover animation */
+    transition: transform 0.2s ease;
     cursor: pointer;
     filter: brightness(0) invert(1);
-  }
-
+  } */
+/* 
   .confirm-btn:hover {
     transform: scale(1.1);
   }
-  
+   */
   
   .suggestions {
     position: absolute;
