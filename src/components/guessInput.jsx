@@ -59,6 +59,7 @@ import { Button, VStack } from "@chakra-ui/react"
             value={input}
             onChange={handleChange}
             disabled={disabled}
+            style={{ color: "white" }}
           />
           
         </form>

@@ -5,7 +5,7 @@
     cursor: pointer;
     user-select: none;
     font-weight: 800;
-    transition: all 0.3s ease;
+    transition: transform 220ms ease, box-shadow 220ms ease;
   }
   
   .home-logo {
@@ -16,4 +16,25 @@
   .small-logo {
     font-size: 2rem;
     padding: 1rem 0;
+  }
+
+  .logo-img {
+    display: block;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+    will-change: transform;
+  }
+
+  .logo-img:hover {
+    transform: scale(1.06);
+    z-index: 50;
+    /* box-shadow: 0 6px 24px rgba(0,0,0,0.45), 0 0 18px rgba(255,255,255,0.06) inset; */
+  }
+
+  .game-logo:focus .logo-img {
+    transform: scale(1.06);
+  }
+
+  .game-logo:focus-visible .logo-img {
+    outline: none;
+    /* box-shadow: 0 6px 24px rgba(0,0,0,0.45), 0 0 18px rgba(255,255,255,0.06) inset; */
   }
