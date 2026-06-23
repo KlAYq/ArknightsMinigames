@@ -2,28 +2,29 @@ import React from "react";
 import HomePage from "./pages/homepage";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import GuessOperator from "./pages/guessOperator";
+import Classic from "./pages/classic";
 import GameLogo from "./components/gameLogo";
 import NotFound from "./pages/notFoundPages";
 import "./app.css";
 
 function AppContent() {
   const location = useLocation();
-  const isGuess = location.pathname === "/guess-operator";
+  const isGamePage = location.pathname === "/guess-operator" || location.pathname === "/classic";
 
-  const appBackground = isGuess
+  const appBackground = isGamePage
     ? {
-        backgroundImage: `url(${process.env.PUBLIC_URL}/res/img/bg_lungmen_o.png)`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
-        width: '100%',
-        backgroundAttachment: 'fixed',
-        // darken the image by blending with a semi-transparent black
-        backgroundColor: 'rgba(0,0,0,0.55)',
-        backgroundBlendMode: 'darken',
-        color: '#fff',
-      }
+      backgroundImage: `url(${process.env.PUBLIC_URL}/res/img/bg_lungmen_o.png)`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      minHeight: '100vh',
+      width: '100%',
+      backgroundAttachment: 'fixed',
+      // darken the image by blending with a semi-transparent black
+      backgroundColor: 'rgba(0,0,0,0.55)',
+      backgroundBlendMode: 'darken',
+      color: '#fff',
+    }
     : {};
 
   return (
@@ -32,6 +33,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/guess-operator" element={<GuessOperator />} />
+        <Route path="/classic" element={<Classic />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

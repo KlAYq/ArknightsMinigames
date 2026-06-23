@@ -1,35 +1,33 @@
 .homepage-container {
-    text-align: center;
-    padding: 40px 20px;
-  }
+  text-align: center;
+  padding: 40px 20px;
+}
 
-  /*  The blurred background layer
-.homepage-container::before {
+/* .homepage-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/res/img/bg_lungmen_o.png"), center/cover no-repeat;;
+  background: url("/public/res/img/Arknight6thAnniversary.png"), center/cover no-repeat;
   filter: blur(12px) brightness(0.4);
-  z-index: 0;
-  transform: scale(1.1); /* avoids edge artifacts from blur 
+  z-index: -1;
+  transform: scale(1.1);
 } */
-  
-  .homepage-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .homepage-subtitle {
-    font-size: 1rem;
-    color: #bbb;
-    margin-bottom: 40px;
-  }
-  
-  .game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
+
+.homepage-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.homepage-subtitle {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}

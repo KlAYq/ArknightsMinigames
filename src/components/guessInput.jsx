@@ -2,55 +2,55 @@ import React, { useState } from "react";
 import "./guessInput.css";
 import { Button, VStack } from "@chakra-ui/react"
 
-  function GuessInput({ onGuess, disabled, operators }) {
-    const [input, setInput] = useState("");
-    const [suggestions, setSuggestions] = useState([]);
-  
-    const operatorList = Object.values(operators || {});
+function GuessInput({ onGuess, disabled, operators }) {
+  const [input, setInput] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
 
-    const handleChange = (e) => {
-      const value = e.target.value;
-      setInput(value);
-  
-      if (value.trim() === "") {
-        setSuggestions([]);
-      } else {
-        const matches = operators.filter((op) =>
-          op.name.toLowerCase().includes(value.toLowerCase())
-        );
-        setSuggestions(matches.slice(0, 5));
-      }
-    };
-  
-    const handleSelect = (op) => {
-      setInput(op.name);
+  const operatorList = Object.values(operators || {});
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setInput(value);
+
+    if (value.trim() === "") {
       setSuggestions([]);
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      if (!input.trim()) return;
-
-      const match = operatorList.find(
-        (op) => op.name.toLowerCase() === input.trim().toLowerCase()
+    } else {
+      const matches = operators.filter((op) =>
+        op.name.toLowerCase().includes(value.toLowerCase())
       );
+      setSuggestions(matches.slice(0, 5));
+    }
+  };
 
-      if (!match) {
-        console.log("Operator not found in the list!");
-        return;
-      }
+  const handleSelect = (op) => {
+    setInput(op.name);
+    setSuggestions([]);
+  };
 
-      onGuess({
-        name: match.name,
-        url: match.url,
-      });
-      // onGuess(input.trim());
-      setInput("");
-      setSuggestions([]);
-    };
-  
-    return (
-      <VStack>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!input.trim()) return;
+
+    const match = operatorList.find(
+      (op) => op.name.toLowerCase() === input.trim().toLowerCase()
+    );
+
+    if (!match) {
+      console.log("Operator not found in the list!");
+      return;
+    }
+
+    onGuess({
+      name: match.name,
+      url: match.url,
+    });
+    // onGuess(input.trim());
+    setInput("");
+    setSuggestions([]);
+  };
+
+  return (
+    <VStack>
       <div className="guess-input-container" style={{ "flex-direction": `row`, display: `flex`, "justify-content": `center` }}>
         <form onSubmit={handleSubmit}>
           <input
@@ -59,12 +59,11 @@ import { Button, VStack } from "@chakra-ui/react"
             value={input}
             onChange={handleChange}
             disabled={disabled}
-            style={{ color: "white" }}
+            style={{ backgroundColor: "white" }}
           />
-          
         </form>
         <Button variant="solid" className="confirm-btn" onClick={handleSubmit} ml={2} colorPalette="teal" size="lg" font={"bold"} >
-            Confirm
+          Confirm
         </Button>
         {suggestions.length > 0 && (
           <ul className="suggestions" align="center">
@@ -77,9 +76,9 @@ import { Button, VStack } from "@chakra-ui/react"
           </ul>
         )}
       </div>
-      </VStack>
-    );
-  }
-  
+    </VStack>
+  );
+}
+
 
 export default GuessInput;

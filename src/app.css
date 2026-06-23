@@ -1,18 +1,26 @@
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #0d0d0d;
-    color: #590e0e;
-  }
-  
-  .App {
-    min-height: 100vh;
-  }
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d0d;
+  color: #590e0e;
+}
 
-  .app-container {
-    text-align: center;
-    min-height: 100vh;
-    background-color: #0d0d0d;
-    color: rgb(255, 255, 255);
-    font-family: "Poppins", sans-serif;
-  }
+.App {
+  min-height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/public/res/img/ArknightsHomePageBg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  font-family: "Poppins", sans-serif;
+}

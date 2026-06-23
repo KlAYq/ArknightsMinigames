@@ -3,38 +3,116 @@
     "name": "Amiya",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_002_amiya.png",
     "emojis": [
-      ["🐰", "🔮", "🐎", "💥"],
-      ["🐇", "⚡", "🧠", "🌌"]
-    ]
+      [
+        "🐰",
+        "🔮",
+        "🐎",
+        "💥"
+      ],
+      [
+        "🐇",
+        "⚡",
+        "🧠",
+        "🌌"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Cautus / Chimera",
+    "tags": [
+      "DPS"
+    ],
+    "region": "Rim Billiton",
+    "release_year": 2020
   },
   "char_003_kalts": {
     "name": "Kal'tsit",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_003_kalts.png",
     "emojis": [
-      ["🐍", "🧬", "💉", "🧠"]
-    ]
+      [
+        "🐍",
+        "🧬",
+        "💉",
+        "🧠"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Feline",
+    "tags": [
+      "Summon",
+      "Healing"
+    ],
+    "region": "Rhodes Island",
+    "release_year": 2021
   },
   "char_010_chen": {
     "name": "Ch'en",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_010_chen.png",
     "emojis": [
-      ["🐉", "⚔️", "💥", "🚓"],
-      ["🐲", "🗡️", "💢", "🏙️"]
-    ]
+      [
+        "🐉",
+        "⚔️",
+        "💥",
+        "🚓"
+      ],
+      [
+        "🐲",
+        "🗡️",
+        "💢",
+        "🏙️"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Lung",
+    "tags": [
+      "DPS",
+      "Nuker"
+    ],
+    "region": "Lungmen",
+    "release_year": 2020
   },
   "char_1013_chen2": {
-  "name":"Ch'en The Holungday",
-  "url":"https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1013_chen2.png",
-  "emojis":[
-  ["🐲","🔫","💦","💢"]
-  ]
+    "name": "Ch'en The Holungday",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1013_chen2.png",
+    "emojis": [
+      [
+        "🐲",
+        "🔫",
+        "💦",
+        "💢"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Lung",
+    "tags": [
+      "DPS",
+      "AoE"
+    ],
+    "region": "Lungmen",
+    "release_year": 2022
   },
   "char_009_12fce": {
     "name": "12F",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_009_12fce.png",
     "emojis": [
-      ["🐱", "💣", "💥", "🎩"]
-    ]
+      [
+        "🐱",
+        "bomb",
+        "💥",
+        "🎩"
+      ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Sarkaz",
+    "tags": [
+      "Starter"
+    ],
+    "region": "Unknown",
+    "release_year": 2020
   },
   "char_017_huang": {
     "name": "Blaze",
@@ -46,7 +124,16 @@
         "🪚",
         "🩸"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Feline",
+    "tags": [
+      "DPS",
+      "Survival"
+    ],
+    "region": "Rhodes Island",
+    "release_year": 2020
   },
   "char_1011_lava2": {
     "name": "Lava the Purgatory",
@@ -58,7 +145,15 @@
         "🌋",
         "🪷"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Sarkaz",
+    "tags": [
+      "DPS"
+    ],
+    "region": "Victoria",
+    "release_year": 2021
   },
   "char_1012_skadi2": {
     "name": "Skadi the Corrupting Heart",
@@ -70,7 +165,17 @@
         "🎶",
         "💔"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Seaborn / Ægir",
+    "tags": [
+      "Support",
+      "Survival",
+      "DPS"
+    ],
+    "region": "Ægir",
+    "release_year": 2021
   },
   "char_1014_nearl2": {
     "name": "Nearl the Radiant Knight",
@@ -82,7 +187,15 @@
         "💂",
         "🥇"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Kuranta",
+    "tags": [
+      "DPS"
+    ],
+    "region": "Kazimierz",
+    "release_year": 2021
   },
   "char_1016_agoat2": {
     "name": "Eyjafjalla the Hvít Aska",
@@ -94,7 +207,15 @@
         "🌿",
         "☮️"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Caprinae",
+    "tags": [
+      "Healing"
+    ],
+    "region": "Leithanien",
+    "release_year": 2024
   },
   "char_1019_siege2": {
     "name": "Vina Victoria",
@@ -106,7 +227,16 @@
         "👸",
         "🇬🇧"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Aslan",
+    "tags": [
+      "DPS",
+      "Survival"
+    ],
+    "region": "Victoria",
+    "release_year": 2025
   },
   "char_101_sora": {
     "name": "Sora",
@@ -118,7 +248,16 @@
         "✨️",
         "🎙️"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Cautus",
+    "tags": [
+      "Support",
+      "Healing"
+    ],
+    "region": "Lungmen",
+    "release_year": 2020
   },
   "char_1020_reed2": {
     "name": "Reed The Flame Shadow",
@@ -130,7 +269,17 @@
         "👭",
         "💥"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Draco",
+    "tags": [
+      "Healing",
+      "DPS",
+      "Debuff"
+    ],
+    "region": "Victoria",
+    "release_year": 2023
   },
   "char_1021_kroos2": {
     "name": "Kroos the Keen Glint",
@@ -142,7 +291,15 @@
         "🏹",
         "👋"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Cautus",
+    "tags": [
+      "DPS"
+    ],
+    "region": "Rim Billiton",
+    "release_year": 2022
   },
   "char_1023_ghost2": {
     "name": "Specter the Unchained",
@@ -154,7 +311,16 @@
         "👭",
         "⛓️"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Ægir",
+    "tags": [
+      "DPS",
+      "Fast-Redeploy"
+    ],
+    "region": "Ægir",
+    "release_year": 2022
   },
   "char_1024_hbisc2": {
     "name": "Hibiscus the Purifier",
@@ -166,7 +332,15 @@
         "🦯",
         "✳️"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Sarkaz",
+    "tags": [
+      "Healing"
+    ],
+    "region": "Victoria",
+    "release_year": 2022
   },
   "char_1026_gvial2": {
     "name": "Gavial the Invincible",
@@ -178,7 +352,17 @@
         "💪",
         "🏄️"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Archosauria",
+    "tags": [
+      "Nuker",
+      "DPS",
+      "Survival"
+    ],
+    "region": "Sargon",
+    "release_year": 2023
   },
   "char_1027_greyy2": {
     "name": "Greyy the Lightningbearer",
@@ -190,7 +374,16 @@
         "💡",
         "📟️"
       ]
-    ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Perro",
+    "tags": [
+      "DPS",
+      "Slow"
+    ],
+    "region": "Bolivar",
+    "release_year": 2023
   },
   "char_1028_texas2": {
     "name": "Texas the Omertosa",
@@ -202,7 +395,16 @@
         "⚔️",
         "💫"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Lupo",
+    "tags": [
+      "DPS",
+      "Fast-Redeploy"
+    ],
+    "region": "Columbia",
+    "release_year": 2023
   },
   "char_1029_yato2": {
     "name": "Kirin R Yato",
@@ -214,7 +416,16 @@
         "🔄",
         "⏩️"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Oni",
+    "tags": [
+      "Nuker",
+      "Fast-Redeploy"
+    ],
+    "region": "Higashi",
+    "release_year": 2023
   },
   "char_102_texas": {
     "name": "Texas",
@@ -226,6 +437,15 @@
         "⚔️",
         "🟩"
       ]
-    ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Lupo",
+    "tags": [
+      "DP-Recovery",
+      "Crowd Control"
+    ],
+    "region": "Columbia",
+    "release_year": 2020
   }
 }
