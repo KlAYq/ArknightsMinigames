@@ -20,7 +20,8 @@ function Classic() {
       position: info.position,
       race: info.race,
       tags: info.tags || [],
-      region: info.region,
+      main_faction: info.main_faction,
+      skill_type: info.skill_type || [],
       release_year: info.release_year,
     }));
     setOperators(list);
@@ -97,8 +98,25 @@ function Classic() {
     };
   };
 
-  const getRegionClass = (guessVal) => {
-    return guessVal === targetOperator.region ? "correct-cell" : "incorrect-cell";
+  const getSkillTypeClassAndContent = (guessSkillTypes) => {
+    const targetSkillTypes = targetOperator.skill_type || [];
+    const intersection = guessSkillTypes.filter((t) => targetSkillTypes.includes(t));
+
+    let cellClass = "incorrect-cell";
+    if (guessSkillTypes.length === targetSkillTypes.length && intersection.length === targetSkillTypes.length) {
+      cellClass = "correct-cell";
+    } else if (intersection.length > 0) {
+      cellClass = "partial-cell";
+    }
+
+    return {
+      cellClass,
+      text: guessSkillTypes.join(", "),
+    };
+  };
+
+  const getMainFactionClass = (guessVal) => {
+    return guessVal === targetOperator.main_faction ? "correct-cell" : "incorrect-cell";
   };
 
   const getYearClassAndArrow = (guessVal) => {
@@ -145,13 +163,15 @@ function Classic() {
                 <th>Position</th>
                 <th>Race</th>
                 <th>Tags</th>
-                <th>Region</th>
+                <th>Main Faction</th>
+                <th>Skill Type</th>
                 <th>Release Yr</th>
               </tr>
             </thead>
             <tbody>
               {guesses.map((guess, index) => {
                 const tagsInfo = getTagsClassAndContent(guess.tags);
+                const skillTypeInfo = getSkillTypeClassAndContent(guess.skill_type);
                 const yearInfo = getYearClassAndArrow(guess.release_year);
 
                 return (
@@ -174,10 +194,13 @@ function Classic() {
                     <td className={tagsInfo.cellClass} style={{ "--delay": 4 }}>
                       {tagsInfo.text}
                     </td>
-                    <td className={getRegionClass(guess.region)} style={{ "--delay": 5 }}>
-                      {guess.region}
+                    <td className={getMainFactionClass(guess.main_faction)} style={{ "--delay": 5 }}>
+                      {guess.main_faction}
                     </td>
-                    <td className={yearInfo.cellClass} style={{ "--delay": 6 }}>
+                    <td className={skillTypeInfo.cellClass} style={{ "--delay": 6 }}>
+                      {skillTypeInfo.text}
+                    </td>
+                    <td className={yearInfo.cellClass} style={{ "--delay": 7 }}>
                       {guess.release_year}
                       {yearInfo.arrow && <span className="direction-arrow">{yearInfo.arrow}</span>}
                     </td>
