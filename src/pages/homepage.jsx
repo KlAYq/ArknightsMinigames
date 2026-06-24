@@ -9,14 +9,14 @@ function HomePage() {
   const games = [
     {
       title: "Emoji",
-      description: "Guess the Arknights operator with emojis.",
-      image: "/res/img/Rhodes_Island_Paramilitary_Force.png",
+      description: "Guess the operator with emojis.",
+      image: process.env.PUBLIC_URL + "/res/img/Rhodes_Island_Paramilitary_Force.png",
       path: "/guess-operator",
     },
     {
       title: "Classic",
       description: "Guess the operator with clues",
-      image: "/res/img/Rhodes_Island_Paramilitary_Force.png",
+      image: process.env.PUBLIC_URL + "/res/img/Rhodes_Island_Paramilitary_Force.png",
       path: "/classic",
     },
   ];
