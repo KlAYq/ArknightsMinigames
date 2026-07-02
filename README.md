@@ -1,7 +1,7 @@
 # Arknights Minigames
 
 A fan-made Arknights website, featuring "Guess the Operator", a minigame where players decipher emoji clues to identify characters from Arknights (heavily inspired by loldle.net).
-
+Link: https://klayq.github.io/ArknightsMinigames
 🚧 **Note**: This project is currently a WIP. The operator database is being populated gradually.
 
 ## Features

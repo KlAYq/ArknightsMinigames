@@ -22,8 +22,12 @@
     "tags": [
       "DPS"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2020
   },
   "char_003_kalts": {
@@ -44,8 +48,13 @@
       "Summon",
       "Healing"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": [
+      "Yan",
+      "Lungmen"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2021
   },
   "char_010_chen": {
@@ -72,8 +81,12 @@
       "DPS",
       "Nuker"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [
+      "Offensive Recovery"
+    ],
     "release_year": 2020
   },
   "char_1013_chen2": {
@@ -94,8 +107,14 @@
       "DPS",
       "AoE"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [
+      "Ammo-based",
+      "Offensive Recovery",
+      "Auto Recovery"
+    ],
     "release_year": 2022
   },
   "char_009_12fce": {
@@ -115,8 +134,10 @@
     "tags": [
       "Starter"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "None"
+    ],
     "release_year": 2020
   },
   "char_017_huang": {
@@ -137,8 +158,13 @@
       "DPS",
       "Survival"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [
+      "Auto Recovery",
+      "Offensive Recovery"
+    ],
     "release_year": 2020
   },
   "char_1011_lava2": {
@@ -158,8 +184,8 @@
     "tags": [
       "DPS"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": ["Auto Recovery"],
     "release_year": 2021
   },
   "char_1012_skadi2": {
@@ -175,14 +201,14 @@
     ],
     "gender": "Female",
     "position": "Ranged",
-    "race": "Seaborn / Ægir",
+    "race": "Undisclosed",
     "tags": [
       "Support",
       "Survival",
       "DPS"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Ægir",
+    "skill_type": ["Auto Recovery"],
     "release_year": 2021
   },
   "char_1014_nearl2": {
@@ -202,9 +228,9 @@
     "tags": [
       "DPS"
     ],
-    "main_faction": "",
-    "skill_type": [],
-    "release_year": 2021
+    "main_faction": "Kazimiers",
+    "skill_type": ["Auto Recovery", "Passive"],
+    "release_year": 2022
   },
   "char_1016_agoat2": {
     "name": "Eyjafjalla the Hvít Aska",
@@ -223,8 +249,10 @@
     "tags": [
       "Healing"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2024
   },
   "char_1019_siege2": {
@@ -245,8 +273,10 @@
       "DPS",
       "Survival"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Victoria",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2025
   },
   "char_101_sora": {
@@ -267,8 +297,10 @@
       "Support",
       "Healing"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Penguin Logistics",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2020
   },
   "char_1020_reed2": {
@@ -290,8 +322,10 @@
       "DPS",
       "Debuff"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Victoria",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2023
   },
   "char_1021_kroos2": {
@@ -311,8 +345,11 @@
     "tags": [
       "DPS"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "Auto Recovery",
+      "Offensive Recovery"
+    ],
     "release_year": 2022
   },
   "char_1023_ghost2": {
@@ -333,8 +370,8 @@
       "DPS",
       "Fast-Redeploy"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": ["Abyssal Hunters", "Ægir"],
+    "skill_type": ["Auto Recovery"],
     "release_year": 2022
   },
   "char_1024_hbisc2": {
@@ -354,8 +391,10 @@
     "tags": [
       "Healing"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2022
   },
   "char_1026_gvial2": {
@@ -377,8 +416,10 @@
       "DPS",
       "Survival"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2023
   },
   "char_1027_greyy2": {
@@ -399,8 +440,10 @@
       "DPS",
       "Slow"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2023
   },
   "char_1028_texas2": {
@@ -421,8 +464,10 @@
       "DPS",
       "Fast-Redeploy"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Penguin Logistics",
+    "skill_type": [
+      "Passive"
+    ],
     "release_year": 2023
   },
   "char_1029_yato2": {
@@ -443,8 +488,10 @@
       "Nuker",
       "Fast-Redeploy"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "Passive"
+    ],
     "release_year": 2023
   },
   "char_102_texas": {
@@ -465,8 +512,10 @@
       "DP-Recovery",
       "Crowd Control"
     ],
-    "main_faction": "",
-    "skill_type": [],
+    "main_faction": "Penguin Logistics",
+    "skill_type": [
+      "Auto Recovery"
+    ],
     "release_year": 2020
   }
 }

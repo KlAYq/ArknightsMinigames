@@ -10,7 +10,7 @@ function HomePage() {
     {
       title: "Emoji",
       description: "Guess the operator with emojis.",
-      image: process.env.PUBLIC_URL + "/res/img/Rhodes_Island_Paramilitary_Force.png",
+      image: process.env.PUBLIC_URL + "/res/img/Wisadel_Skin_2.png",
       path: "/guess-operator",
     },
     {
@@ -23,7 +23,7 @@ function HomePage() {
 
   return (
     <div className="homepage-container">
-      <h1 className="homepage-title">Arknights Minigames</h1>
+      {/* <h1 className="homepage-title"></h1> */}
       <p className="homepage-subtitle">
         {/* Arknight Minigames! */}
       </p>

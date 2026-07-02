@@ -20,7 +20,7 @@ function Classic() {
       position: info.position,
       race: info.race,
       tags: info.tags || [],
-      main_faction: info.main_faction,
+      main_faction: Array.isArray(info.main_faction) ? info.main_faction : (info.main_faction ? [info.main_faction] : []),
       skill_type: info.skill_type || [],
       release_year: info.release_year,
     }));
@@ -115,8 +115,21 @@ function Classic() {
     };
   };
 
-  const getMainFactionClass = (guessVal) => {
-    return guessVal === targetOperator.main_faction ? "correct-cell" : "incorrect-cell";
+  const getMainFactionClassAndContent = (guessFactions) => {
+    const targetFactions = targetOperator.main_faction || [];
+    const intersection = guessFactions.filter((t) => targetFactions.includes(t));
+
+    let cellClass = "incorrect-cell";
+    if (guessFactions.length === targetFactions.length && intersection.length === targetFactions.length) {
+      cellClass = "correct-cell";
+    } else if (intersection.length > 0) {
+      cellClass = "partial-cell";
+    }
+
+    return {
+      cellClass,
+      text: guessFactions.join(", "),
+    };
   };
 
   const getYearClassAndArrow = (guessVal) => {
@@ -171,6 +184,7 @@ function Classic() {
             <tbody>
               {guesses.map((guess, index) => {
                 const tagsInfo = getTagsClassAndContent(guess.tags);
+                const mainFactionInfo = getMainFactionClassAndContent(guess.main_faction);
                 const skillTypeInfo = getSkillTypeClassAndContent(guess.skill_type);
                 const yearInfo = getYearClassAndArrow(guess.release_year);
 
@@ -194,8 +208,8 @@ function Classic() {
                     <td className={tagsInfo.cellClass} style={{ "--delay": 4 }}>
                       {tagsInfo.text}
                     </td>
-                    <td className={getMainFactionClass(guess.main_faction)} style={{ "--delay": 5 }}>
-                      {guess.main_faction}
+                    <td className={mainFactionInfo.cellClass} style={{ "--delay": 5 }}>
+                      {mainFactionInfo.text}
                     </td>
                     <td className={skillTypeInfo.cellClass} style={{ "--delay": 6 }}>
                       {skillTypeInfo.text}
