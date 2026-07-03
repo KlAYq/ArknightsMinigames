@@ -517,5 +517,78 @@
       "Auto Recovery"
     ],
     "release_year": 2020
+  },
+  "char_151_myrtle": {
+    "name": "Myrtle",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_151_myrtle.png",
+    "emojis": [
+      [
+        "🏳️",
+        "🍎",
+        "🏃‍♀️",
+        "🖨️"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Durin",
+    "tags": [
+      "Healing",
+      "DP-Recovery"
+    ],
+    "main_faction": "Rhodes Island",
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2020
+  },
+  "char_237_gravel": {
+    "name": "Gravel",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_237_gravel.png",
+    "emojis": [
+      [
+        "💋",
+        "🐿️",
+        "🛡️",
+        "💨"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Zalak",
+    "tags": [
+      "Fast-Redeploy",
+      "Defense"
+    ],
+    "main_faction": "Kazimiers",
+    "skill_type": [
+      "Passive"
+    ],
+    "release_year": 2020
+  },
+  "char_242_otter": {
+    "name": "Mayer",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_242_otter.png",
+    "emojis": [
+      [
+        "🦦",
+        "🤖",
+        "🔧",
+        "🧠"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Anaty",
+    "tags": [
+      "Summon",
+      "Crowd Control"
+    ],
+    "main_faction": "Rhine Lab",
+    "skill_type": [
+      "Auto Recovery",
+      "Passive"
+    ],
+    "release_year": 2020
   }
 }
