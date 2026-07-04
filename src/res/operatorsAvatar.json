@@ -590,5 +590,77 @@
       "Passive"
     ],
     "release_year": 2020
+  },
+  "char_279_excu": {
+    "name": "Executor",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_279_excu.png",
+    "emojis": [
+      [
+        "🦅",
+        "⚖️",
+        "😐",
+        "7️⃣"
+      ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Sankta",
+    "tags": [
+      "AoE"
+    ],
+    "main_faction": "Laterano",
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2020
+  },
+  "char_235_jesica": {
+    "name": "Jessica",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_235_jesica.png",
+    "emojis": [
+      [
+        "🔫",
+        "💶",
+        "🥺",
+        "😿"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Feline",
+    "tags": [
+      "DPS",
+      "Survival"
+    ],
+    "main_faction": "Blacksteel Worldwide",
+    "skill_type": [
+      "Auto Recovery",
+      "Offensive Recovery"
+    ],
+    "release_year": 2020
+  },
+  "char_4064_mlynar": {
+    "name": "Mlynar",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4064_mlynar.png",
+    "emojis": [
+      [
+        "🐴",
+        "😐",
+        "🗡️",
+        "📰"
+      ]
+    ],
+    "gender": "Male",
+    "position": "Melee",
+    "race": "Kuranta",
+    "tags": [
+      "DPS",
+      "Nuker"
+    ],
+    "main_faction": "Kazimiers",
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2023
   }
 }
