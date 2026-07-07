@@ -662,5 +662,52 @@
       "Auto Recovery"
     ],
     "release_year": 2023
+  },
+  "char_332_archet": {
+    "name": "Archetto",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_332_archet.png",
+    "emojis": [
+      [
+        "🏹",
+        "⛪",
+        "🧀",
+        "🐦"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Liberi",
+    "tags": [
+      "DPS"
+    ],
+    "main_faction": "Laterano",
+    "skill_type": [
+      "Offensive Recovery"
+    ],
+    "release_year": 2021
+  },
+  "char_134_ifrit": {
+    "name": "Ifrit",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_134_ifrit.png",
+    "emojis": [
+      [
+        "🔥",
+        "😠",
+        "💊",
+        "🛣️"
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Sarkaz",
+    "tags": [
+      "AoE",
+      "Debuff"
+    ],
+    "main_faction": "Rhine Lab",
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2020
   }
 }
