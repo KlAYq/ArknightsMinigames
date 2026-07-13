@@ -16,9 +16,9 @@ function GuessInput({ onGuess, disabled, operators }) {
       setSuggestions([]);
     } else {
       const matches = operators.filter((op) =>
-        op.name.toLowerCase().includes(value.toLowerCase())
+        op.name.toLowerCase().startsWith(value.toLowerCase())
       );
-      setSuggestions(matches.slice(0, 5));
+      setSuggestions(matches);
     }
   };
 

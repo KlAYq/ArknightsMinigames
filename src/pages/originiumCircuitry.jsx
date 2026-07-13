@@ -26,8 +26,8 @@ const BASE_SHAPES = [
   { name: "Tetromino-Z", shape: [[1, 1, 0], [0, 1, 1]] },
 ];
 
-// Component that draws a contiguous outline around the shape
-const PieceSVG = ({ shape, cellSize, color, opacity = 1 }) => {
+// Reusable Piece SVG component that draws a contiguous outline around the shape
+const PieceSVG = ({ shape, cellSize, color, opacity = 1, rotation = 0, onClick, onTouchStart }) => {
   const pRows = shape.length;
   const pCols = shape[0].length;
   const width = pCols * cellSize;
@@ -64,53 +64,68 @@ const PieceSVG = ({ shape, cellSize, color, opacity = 1 }) => {
   }
 
   return (
-    <svg width={width} height={height} style={{ display: "block", opacity }}>
-      {/* 1. Filled cells */}
-      {shape.map((row, r) =>
-        row.map((cell, c) => {
-          if (cell === 0) return null;
-          return (
-            <rect
-              key={`${r}-${c}`}
-              x={c * cellSize}
-              y={r * cellSize}
-              width={cellSize}
-              height={cellSize}
-              fill={color}
-              stroke="none"
-            />
-          );
-        })
-      )}
+    <div
+      className="piece-svg-container"
+      style={{
+        display: "inline-block",
+        opacity,
+        transform: `rotate(${rotation}deg)`,
+        transition: "transform 0.22s cubic-bezier(0.25, 0.8, 0.25, 1)",
+        transformOrigin: "center center",
+        pointerEvents: "none",
+      }}
+    >
+      <svg width={width} height={height} style={{ display: "block", pointerEvents: "none" }}>
+        {/* 1. Filled cells */}
+        {shape.map((row, r) =>
+          row.map((cell, c) => {
+            if (cell === 0) return null;
+            return (
+              <rect
+                key={`${r}-${c}`}
+                x={c * cellSize}
+                y={r * cellSize}
+                width={cellSize}
+                height={cellSize}
+                fill={color}
+                stroke="none"
+                onClick={onClick}
+                onTouchStart={onTouchStart}
+                style={{ pointerEvents: "auto", cursor: (onClick || onTouchStart) ? "pointer" : "default" }}
+              />
+            );
+          })
+        )}
 
-      {/* Inner thick black border */}
-      {lines.map((line, i) => (
-        <line
-          key={`black-outer-${i}`}
-          x1={line.x1}
-          y1={line.y1}
-          x2={line.x2}
-          y2={line.y2}
-          stroke="#000000ff"
-          strokeWidth={6}
-          strokeLinecap="square"
-        />
-      ))}
+        {/* Inner thick black border */}
+        {lines.map((line, i) => (
+          <line
+            key={`black-outer-${i}`}
+            x1={line.x1}
+            y1={line.y1}
+            x2={line.x2}
+            y2={line.y2}
+            stroke="#000000ff"
+            strokeWidth={6}
+            strokeLinecap="square"
+          />
+        ))}
 
-      {/* Outer green highlight stripe */}
-      {lines.map((line, i) => (
-        <line
-          key={`green-${i}`}
-          x1={line.x1}
-          y1={line.y1}
-          x2={line.x2}
-          y2={line.y2}
-          stroke={color}
-          strokeWidth={2}
-          strokeLinecap="square"
-        />
-      ))}
-    </svg>
+        {/* Outer green highlight stripe */}
+        {lines.map((line, i) => (
+          <line
+            key={`green-${i}`}
+            x1={line.x1}
+            y1={line.y1}
+            x2={line.x2}
+            y2={line.y2}
+            stroke={color}
+            strokeWidth={2}
+            strokeLinecap="square"
+          />
+        ))}
+      </svg>
+    </div>
   );
 };
 
@@ -118,12 +133,11 @@ function OriginiumCircuitry() {
   const [gridSize, setGridSize] = useState({ rows: 5, cols: 5 });
   const [rowTargets, setRowTargets] = useState([]);
   const [colTargets, setColTargets] = useState([]);
-  const [placedPieces, setPlacedPieces] = useState([]); // { id, shape, r, c, color, originalShape }
+  const [placedPieces, setPlacedPieces] = useState([]); // { id, shape, r, c, color, originalShape, rotation }
   const [inventory, setInventory] = useState([]); // { id, shape, color, originalShape }
 
-  // Dragging state
-  const [draggedPiece, setDraggedPiece] = useState(null); // { id, shape, color, source, originalPos, originalShape }
-  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
+  // Dragging/holding state
+  const [draggedPiece, setDraggedPiece] = useState(null); // { id, shape, color, source, originalPos, originalShape, visualRotation }
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [hoverGridPos, setHoverGridPos] = useState(null); // { r, c }
 
@@ -138,7 +152,7 @@ function OriginiumCircuitry() {
     startNewGame();
   }, [gridSize]);
 
-  // Handle global mouse move / up for custom drag and drop
+  // Handle global mouse move & click-to-place logic (Desktop)
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePos({ x: e.clientX, y: e.clientY });
@@ -148,23 +162,27 @@ function OriginiumCircuitry() {
       const rect = gridRef.current.getBoundingClientRect();
       const cellSize = rect.width / gridSize.cols;
 
-      // Align drag source relative to top left of the shape bounding box
-      const relativeX = e.clientX - rect.left - dragOffset.x;
-      const relativeY = e.clientY - rect.top - dragOffset.y;
+      const relativeX = e.clientX - rect.left;
+      const relativeY = e.clientY - rect.top;
 
-      const r = Math.round(relativeY / cellSize);
-      const c = Math.round(relativeX / cellSize);
+      // Cursor grid coordinate
+      const cursorR = Math.floor(relativeY / cellSize);
+      const cursorC = Math.floor(relativeX / cellSize);
+
+      // Centered top-left of the piece relative to grid
+      const r = cursorR - Math.floor(draggedPiece.shape.length / 2);
+      const c = cursorC - Math.floor(draggedPiece.shape[0].length / 2);
 
       setHoverGridPos({ r, c });
     };
 
-    const handleMouseUp = () => {
+    const handleGlobalClick = () => {
       if (!draggedPiece) return;
 
       if (hoverGridPos && gridRef.current) {
         const { r, c } = hoverGridPos;
         if (canPlacePiece(draggedPiece.shape, r, c, draggedPiece.id)) {
-          // Add to placed
+          // Place it
           const newPlaced = [
             ...placedPieces.filter(p => p.id !== draggedPiece.id),
             {
@@ -173,16 +191,17 @@ function OriginiumCircuitry() {
               r,
               c,
               color: draggedPiece.color,
-              originalShape: draggedPiece.originalShape
+              originalShape: draggedPiece.originalShape,
+              rotation: draggedPiece.visualRotation
             }
           ];
           setPlacedPieces(newPlaced);
         } else {
-          // Invalid drop on grid -> return to inventory with original shape
+          // Invalid click on grid -> return to inventory with original shape
           returnToInventoryWithOriginalShape(draggedPiece);
         }
       } else {
-        // Drop outside grid -> return to inventory with original shape
+        // Clicked outside grid -> return to inventory with original shape
         returnToInventoryWithOriginalShape(draggedPiece);
       }
 
@@ -197,15 +216,93 @@ function OriginiumCircuitry() {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseup", handleMouseUp);
+    window.addEventListener("click", handleGlobalClick);
     window.addEventListener("keydown", handleKeyDown);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
+      window.removeEventListener("click", handleGlobalClick);
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [draggedPiece, dragOffset, hoverGridPos, placedPieces, gridSize]);
+  }, [draggedPiece, hoverGridPos, placedPieces, gridSize]);
+
+  // Handle global touch events (Mobile compatibility)
+  useEffect(() => {
+    const handleTouchStart = (e) => {
+      if (!draggedPiece) return;
+      // If a second finger touches the screen while dragging, rotate!
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        rotateDraggedPiece();
+      }
+    };
+
+    const handleTouchMove = (e) => {
+      if (!draggedPiece || !gridRef.current) return;
+      // Prevent browser scroll/move/refresh while dragging
+      e.preventDefault();
+
+      const touch = e.touches[0];
+      setMousePos({ x: touch.clientX, y: touch.clientY });
+
+      const rect = gridRef.current.getBoundingClientRect();
+      const cellSize = rect.width / gridSize.cols;
+
+      const relativeX = touch.clientX - rect.left;
+      const relativeY = touch.clientY - rect.top;
+
+      const cursorR = Math.floor(relativeY / cellSize);
+      const cursorC = Math.floor(relativeX / cellSize);
+
+      const r = cursorR - Math.floor(draggedPiece.shape.length / 2);
+      const c = cursorC - Math.floor(draggedPiece.shape[0].length / 2);
+
+      setHoverGridPos({ r, c });
+    };
+
+    const handleTouchEnd = (e) => {
+      if (!draggedPiece) return;
+
+      // When the dragging finger is released
+      if (e.touches.length === 0) {
+        if (hoverGridPos && gridRef.current) {
+          const { r, c } = hoverGridPos;
+          if (canPlacePiece(draggedPiece.shape, r, c, draggedPiece.id)) {
+            const newPlaced = [
+              ...placedPieces.filter(p => p.id !== draggedPiece.id),
+              {
+                id: draggedPiece.id,
+                shape: draggedPiece.shape,
+                r,
+                c,
+                color: draggedPiece.color,
+                originalShape: draggedPiece.originalShape,
+                rotation: draggedPiece.visualRotation
+              }
+            ];
+            setPlacedPieces(newPlaced);
+          } else {
+            returnToInventoryWithOriginalShape(draggedPiece);
+          }
+        } else {
+          returnToInventoryWithOriginalShape(draggedPiece);
+        }
+
+        setDraggedPiece(null);
+        setHoverGridPos(null);
+      }
+    };
+
+    window.addEventListener("touchstart", handleTouchStart, { passive: false });
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
+    window.addEventListener("touchend", handleTouchEnd, { passive: false });
+
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [draggedPiece, hoverGridPos, placedPieces, gridSize]);
 
   // Solve detection
   useEffect(() => {
@@ -252,8 +349,6 @@ function OriginiumCircuitry() {
 
   const returnToInventoryWithOriginalShape = (piece) => {
     setPlacedPieces(prev => prev.filter(p => p.id !== piece.id));
-
-    // Reset shape to originalShape in inventory
     setInventory(prev =>
       prev.map(item => item.id === piece.id ? { ...item, shape: piece.originalShape } : item)
     );
@@ -322,7 +417,9 @@ function OriginiumCircuitry() {
           shape,
           r,
           c,
-          color: "#8FC000"
+          color: "#8FC000",
+          originalShape: shape,
+          rotation: 0
         });
       }
     }
@@ -357,6 +454,7 @@ function OriginiumCircuitry() {
     const rotated = rotateMatrix(draggedPiece.shape);
     setDraggedPiece(prev => ({
       ...prev,
+      visualRotation: prev.visualRotation + 90,
       shape: rotated
     }));
 
@@ -398,8 +496,8 @@ function OriginiumCircuitry() {
   };
 
   // Click handler to pick up piece from sidebar
-  const handleInventoryPieceMouseDown = (e, piece) => {
-    if (isSolved) return;
+  const handleInventoryPieceClick = (e, piece) => {
+    if (isSolved || draggedPiece) return;
 
     // Check if it is already placed or dragging
     const isPlaced = placedPieces.some(p => p.id === piece.id);
@@ -407,26 +505,45 @@ function OriginiumCircuitry() {
     if (isPlaced || isDragging) return;
 
     e.preventDefault();
+    e.stopPropagation();
 
     setDraggedPiece({
       id: piece.id,
       shape: piece.shape,
       color: piece.color,
       source: "inventory",
-      originalShape: piece.originalShape
+      originalShape: piece.originalShape,
+      visualRotation: 0
+    });
+  };
+
+  // Touch pick up handler from sidebar (Mobile)
+  const handleInventoryPieceTouchStart = (e, piece) => {
+    if (isSolved || draggedPiece) return;
+
+    const isPlaced = placedPieces.some(p => p.id === piece.id);
+    const isDragging = draggedPiece?.id === piece.id;
+    if (isPlaced || isDragging) return;
+
+    e.stopPropagation();
+    const touch = e.touches[0];
+
+    setDraggedPiece({
+      id: piece.id,
+      shape: piece.shape,
+      color: piece.color,
+      source: "inventory",
+      originalShape: piece.originalShape,
+      visualRotation: 0
     });
 
-    setDragOffset({
-      x: 30,
-      y: 30
-    });
-
-    setMousePos({ x: e.clientX, y: e.clientY });
+    setMousePos({ x: touch.clientX, y: touch.clientY });
   };
 
   // Click handler to pick up already placed piece from grid
-  const handlePlacedPieceMouseDown = (e, piece) => {
-    if (isSolved) return;
+  const handlePlacedPieceClick = (e, piece) => {
+    if (isSolved || draggedPiece) return;
+
     e.preventDefault();
     e.stopPropagation();
 
@@ -436,27 +553,32 @@ function OriginiumCircuitry() {
       color: piece.color,
       source: "grid",
       originalPos: { r: piece.r, c: piece.c },
-      originalShape: piece.originalShape
+      originalShape: piece.originalShape,
+      visualRotation: piece.rotation || 0
     });
-
-    const rect = gridRef.current.getBoundingClientRect();
-    const cellSize = rect.width / gridSize.cols;
-
-    // Calculate offset relative to top-left of the piece's cell
-    const clickXOnGrid = e.clientX - rect.left;
-    const clickYOnGrid = e.clientY - rect.top;
-    const pieceTopLeftX = piece.c * cellSize;
-    const pieceTopLeftY = piece.r * cellSize;
-
-    setDragOffset({
-      x: clickXOnGrid - pieceTopLeftX,
-      y: clickYOnGrid - pieceTopLeftY
-    });
-
-    setMousePos({ x: e.clientX, y: e.clientY });
   };
 
-  // Handle right-click on floating piece to rotate
+  // Touch pick up handler from grid (Mobile)
+  const handlePlacedPieceTouchStart = (e, piece) => {
+    if (isSolved || draggedPiece) return;
+
+    e.stopPropagation();
+    const touch = e.touches[0];
+
+    setDraggedPiece({
+      id: piece.id,
+      shape: piece.shape,
+      color: piece.color,
+      source: "grid",
+      originalPos: { r: piece.r, c: piece.c },
+      originalShape: piece.originalShape,
+      visualRotation: piece.rotation || 0
+    });
+
+    setMousePos({ x: touch.clientX, y: touch.clientY });
+  };
+
+  // Handle right-click on floating piece to rotate (Desktop)
   const handleContextMenu = (e) => {
     e.preventDefault();
     rotateDraggedPiece();
@@ -495,11 +617,11 @@ function OriginiumCircuitry() {
   const cellSize = 70;
 
   return (
-    <div className="circuitry-page" onContextMenu={draggedPiece ? handleContextMenu : undefined}>
+    <div className={`circuitry-page ${draggedPiece ? "holding-piece" : ""}`} onContextMenu={draggedPiece ? handleContextMenu : undefined}>
       <Confetti active={showVictoryControls} />
       <div className="circuitry-panel">
         <h1 className="title">Originium Circuitry Module</h1>
-        <p className="subtitle">Drag components to the board to repair it</p>
+        <p className="subtitle">Click components to the board to repair it</p>
 
         <div className="game-layout">
 
@@ -508,12 +630,16 @@ function OriginiumCircuitry() {
             <h2 className="sidebar-title">Controls</h2>
             <div className="instructions-card">
               <div className="instruction-row">
-                <span className="key-cap">Left Click and Drag</span>
-                <span>Move pieces onto the grid.</span>
+                <span className="key-cap">Left Click</span>
+                <span>Pick up / place pieces.</span>
               </div>
               <div className="instruction-row">
-                <span className="key-cap">R</span>
-                <span>Rotate shapes clockwise.</span>
+                <span className="key-cap">R or Right Click</span>
+                <span>Rotate piece clockwise.</span>
+              </div>
+              <div className="instruction-row mobile-controls-info">
+                <span className="key-cap">For Mobile</span>
+                <span>Drag to move. Multi-touch to rotate.</span>
               </div>
             </div>
           </div>
@@ -570,7 +696,6 @@ function OriginiumCircuitry() {
 
                   {/* Render placed pieces*/}
                   {placedPieces.map((piece) => {
-                    // Hide temporarily if it is currently being dragged
                     if (draggedPiece?.id === piece.id) return null;
 
                     return (
@@ -584,11 +709,17 @@ function OriginiumCircuitry() {
                           width: `${piece.shape[0].length * cellSize}px`,
                           height: `${piece.shape.length * cellSize}px`,
                           zIndex: 10,
-                          cursor: "grab"
+                          pointerEvents: "none"
                         }}
-                        onMouseDown={(e) => handlePlacedPieceMouseDown(e, piece)}
                       >
-                        <PieceSVG shape={piece.shape} cellSize={cellSize} color={piece.color} />
+                        <PieceSVG
+                          shape={piece.shape}
+                          cellSize={cellSize}
+                          color={piece.color}
+                          rotation={0}
+                          onClick={(e) => handlePlacedPieceClick(e, piece)}
+                          onTouchStart={(e) => handlePlacedPieceTouchStart(e, piece)}
+                        />
                       </div>
                     );
                   })}
@@ -623,6 +754,7 @@ function OriginiumCircuitry() {
                           cellSize={cellSize}
                           color={placeable ? "white" : "#ff3b30"}
                           opacity={0.6}
+                          rotation={0}
                         />
                       </div>
                     );
@@ -656,13 +788,15 @@ function OriginiumCircuitry() {
                   <div
                     key={piece.id}
                     className={`inventory-item-card ${isEmpty ? "empty-item" : ""}`}
-                    onMouseDown={(e) => handleInventoryPieceMouseDown(e, piece)}
+                    onClick={(e) => handleInventoryPieceClick(e, piece)}
+                    onTouchStart={(e) => handleInventoryPieceTouchStart(e, piece)}
                   >
                     {!isEmpty && (
                       <PieceSVG
                         shape={piece.shape}
                         cellSize={Math.min(22, 60 / Math.max(piece.shape.length, piece.shape[0].length))}
                         color={piece.color}
+                        rotation={0}
                       />
                     )}
                   </div>
@@ -678,17 +812,29 @@ function OriginiumCircuitry() {
       </div>
 
       {/* Floating Drag Representation */}
-      {draggedPiece && (
-        <div
-          className="floating-drag-piece"
-          style={{
-            left: mousePos.x - dragOffset.x,
-            top: mousePos.y - dragOffset.y,
-          }}
-        >
-          <PieceSVG shape={draggedPiece.shape} cellSize={cellSize} color={draggedPiece.color} />
-        </div>
-      )}
+      {draggedPiece && (() => {
+        const originalRows = draggedPiece.originalShape.length;
+        const originalCols = draggedPiece.originalShape[0].length;
+        return (
+          <div
+            className="floating-drag-piece"
+            style={{
+              position: "fixed",
+              pointerEvents: "none",
+              zIndex: 10000,
+              left: `${mousePos.x - (originalCols * cellSize) / 2}px`,
+              top: `${mousePos.y - (originalRows * cellSize) / 2}px`,
+            }}
+          >
+            <PieceSVG
+              shape={draggedPiece.originalShape}
+              cellSize={cellSize}
+              color={draggedPiece.color}
+              rotation={draggedPiece.visualRotation}
+            />
+          </div>
+        );
+      })()}
     </div>
   );
 }
