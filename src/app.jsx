@@ -3,13 +3,17 @@ import HomePage from "./pages/homepage";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import GuessOperator from "./pages/guessOperator";
 import Classic from "./pages/classic";
+import OriginiumCircuitry from "./pages/originiumCircuitry";
 import GameLogo from "./components/gameLogo";
 import NotFound from "./pages/notFoundPages";
 import "./app.css";
 
 function AppContent() {
   const location = useLocation();
-  const isGamePage = location.pathname === "/guess-operator" || location.pathname === "/classic";
+  const isGamePage =
+    location.pathname === "/guess-operator" ||
+    location.pathname === "/classic" ||
+    location.pathname === "/originium-circuitry";
 
   const appBackground = isGamePage
     ? {
@@ -34,6 +38,7 @@ function AppContent() {
         <Route path="/" element={<HomePage />} />
         <Route path="/guess-operator" element={<GuessOperator />} />
         <Route path="/classic" element={<Classic />} />
+        <Route path="/originium-circuitry" element={<OriginiumCircuitry />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

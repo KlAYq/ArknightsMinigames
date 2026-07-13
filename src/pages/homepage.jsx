@@ -19,6 +19,12 @@ function HomePage() {
       image: process.env.PUBLIC_URL + "/res/img/Rhodes_Island_Paramilitary_Force.png",
       path: "/classic",
     },
+    {
+      title: "Originium Circuitry Module",
+      description: "Endfield puzzle minigame",
+      image: process.env.PUBLIC_URL + "/res/img/ChenWoah.png",
+      path: "/originium-circuitry",
+    },
   ];
 
   return (
