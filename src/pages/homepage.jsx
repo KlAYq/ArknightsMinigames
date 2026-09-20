@@ -11,7 +11,7 @@ function HomePage() {
       title: "Emoji",
       description: "Guess the operator with emojis.",
       image: process.env.PUBLIC_URL + "/res/img/Wisadel_Skin_2.png",
-      path: "/guess-operator",
+      path: "/emoji",
     },
     {
       title: "Classic",
@@ -45,6 +45,20 @@ function HomePage() {
           />
         ))}
       </div>
+
+      <footer className="homepage-footer">
+        <p>
+          Made by{" "}
+          <a
+            href="https://github.com/KlAYq"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            KlAYq
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }

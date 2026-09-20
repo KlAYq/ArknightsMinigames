@@ -1,7 +1,7 @@
 import React from "react";
 import HomePage from "./pages/homepage";
 import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import GuessOperator from "./pages/guessOperator";
+import Emoji from "./pages/Emoji";
 import Classic from "./pages/classic";
 import OriginiumCircuitry from "./pages/originiumCircuitry";
 import GameLogo from "./components/gameLogo";
@@ -11,7 +11,7 @@ import "./app.css";
 function AppContent() {
   const location = useLocation();
   const isGamePage =
-    location.pathname === "/guess-operator" ||
+    location.pathname === "/emoji" ||
     location.pathname === "/classic" ||
     location.pathname === "/originium-circuitry";
 
@@ -36,7 +36,7 @@ function AppContent() {
       <GameLogo />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/guess-operator" element={<GuessOperator />} />
+        <Route path="/emoji" element={<Emoji />} />
         <Route path="/classic" element={<Classic />} />
         <Route path="/originium-circuitry" element={<OriginiumCircuitry />} />
 

@@ -297,12 +297,12 @@
   border-radius: 2px;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(255, 202, 40, 0.25);
-  transition: all 0.2s ease;
+  /* transition: all 0.2s ease; */
 }
 
 .play-again-btn:hover {
   background: #ffe082;
-  transform: translateY(-1px);
+  /* transform: translateY(-1px); */
   box-shadow: 0 6px 20px rgba(255, 202, 40, 0.4);
 }
 

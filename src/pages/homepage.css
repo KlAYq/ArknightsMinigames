@@ -31,3 +31,24 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.homepage-footer {
+  margin-top: 60px;
+  padding: 20px 0;
+  font-size: 0.95rem;
+  color: #aaa;
+  letter-spacing: 0.5px;
+}
+
+.footer-link {
+  color: #ffca28;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffe082;
+  text-decoration: underline;
+  text-shadow: 0 0 8px rgba(255, 202, 40, 0.6);
+}

@@ -768,7 +768,7 @@ function OriginiumCircuitry() {
               <div className="victory-controls-inline">
                 {/* <h2 className="victory-title-inline">Circuit Connected</h2> */}
                 <button className="play-again-btn" onClick={startNewGame}>
-                  Next Circuit
+                  Play Again
                 </button>
               </div>
             )}
