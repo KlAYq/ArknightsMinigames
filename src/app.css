@@ -1,3 +1,11 @@
+* {
+  cursor: url("/public/res/img/a9_prts_cursor.png") 0 0, auto !important;
+}
+
+/* *:active {
+  cursor: url("/public/res/img/a9_prts_cursor_click.png") 0 0, auto !important;
+} */
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;

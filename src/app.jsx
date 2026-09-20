@@ -1,6 +1,6 @@
 import React from "react";
 import HomePage from "./pages/homepage";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import GuessOperator from "./pages/guessOperator";
 import Classic from "./pages/classic";
 import OriginiumCircuitry from "./pages/originiumCircuitry";
@@ -48,7 +48,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <AppContent />
     </Router>
   );
