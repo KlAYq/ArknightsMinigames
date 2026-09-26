@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ArknightsMinigames/static/css/main.4afde61e.css",
-    "main.js": "/ArknightsMinigames/static/js/main.835f293c.js",
+    "main.js": "/ArknightsMinigames/static/js/main.65587336.js",
     "static/media/ArknightsHomePageBg.png": "/ArknightsMinigames/static/media/ArknightsHomePageBg.206748c3c75a9a4b44e7.png",
     "index.html": "/ArknightsMinigames/index.html",
     "main.4afde61e.css.map": "/ArknightsMinigames/static/css/main.4afde61e.css.map",
-    "main.835f293c.js.map": "/ArknightsMinigames/static/js/main.835f293c.js.map"
+    "main.65587336.js.map": "/ArknightsMinigames/static/js/main.65587336.js.map"
   },
   "entrypoints": [
     "static/css/main.4afde61e.css",
-    "static/js/main.835f293c.js"
+    "static/js/main.65587336.js"
   ]
 }
