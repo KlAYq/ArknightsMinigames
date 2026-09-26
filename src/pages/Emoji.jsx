@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import GuessInput from "../components/guessInput";
 import Confetti from "../components/Confetti";
 import "./Emoji.css";
-import operatorData from "../res/operatorsAvatar.json";
+import operatorData from "../res/operatorsInfo.json";
 import questionIcon from "../res/questionMark.png";
 import { VStack, HStack, Text } from "@chakra-ui/react";
 
@@ -107,7 +107,7 @@ function Emoji() {
             <Confetti active={status === "correct"} />
             <div className="guess-panel">
                 <h1 className="title">Which operator do these emojis describe?</h1>
-
+                <h3 style={{ color: "grey" }}> Some operator still don't have emojis set yet, so you will see blank emoji</h3>
                 <div className="emoji-container">
                     {emoji.map((emoji, i) => (
                         <span key={i} className={`emoji-slot ${i < revealed ? "show" : "hidden"}`}>

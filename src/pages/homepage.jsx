@@ -8,7 +8,7 @@ function HomePage() {
 
   const games = [
     {
-      title: "Emoji",
+      title: "Emoji (Beta)",
       description: "Guess the operator with emojis.",
       image: process.env.PUBLIC_URL + "/res/img/Wisadel_Skin_2.png",
       path: "/emoji",

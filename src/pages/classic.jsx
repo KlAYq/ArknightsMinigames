@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import GuessInput from "../components/guessInput";
 import Confetti from "../components/Confetti";
 import "./classic.css";
-import operatorData from "../res/operatorsAvatar.json";
+import operatorData from "../res/operatorsInfo.json";
 
 function Classic() {
   const [targetOperator, setTargetOperator] = useState(null);
