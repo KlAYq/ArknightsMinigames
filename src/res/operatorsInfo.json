@@ -10445,5 +10445,290 @@
       "Auto Recovery"
     ],
     "release_year": 2020
+  },
+  "char_1051_headb2": {
+    "name": "Zima the Raging Tide",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1051_headb2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Ursus",
+    "tags": [
+      "DPS",
+      "Crowd-Control"
+    ],
+    "main_faction": [
+      "Ursus Student Self-Governing Group"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4223_botany": {
+    "name": "Botani",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4223_botany.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Elafia",
+    "tags": [
+      "Elemental"
+    ],
+    "main_faction": [
+      "Ursus"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4037_demetr": {
+    "name": "Bellone",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4037_demetr.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Melee",
+    "race": "Lupo",
+    "tags": [
+      "DPS",
+      "Debuff"
+    ],
+    "main_faction": [
+      "Siracusa"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4031_liesel": {
+    "name": "Ripresa",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4031_liesel.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Caprinae",
+    "tags": [
+      "AoE",
+      "DPS"
+    ],
+    "main_faction": [
+      "Siracusa"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1050_chen3": {
+    "name": "Ch'en the Dawnstreak",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1050_chen3.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Lung",
+    "tags": [
+      "Nuker",
+      "DPS"
+    ],
+    "main_faction": [
+      "Yan"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_2027_wang": {
+    "name": "Wang",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_2027_wang.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Undisclosed",
+    "tags": [
+      "Summon",
+      "DPS"
+    ],
+    "main_faction": [
+      "Sui"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4221_ju": {
+    "name": "Ju",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4221_ju.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Undisclosed",
+    "tags": [
+      "DPS"
+    ],
+    "main_faction": [
+      "Yan"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4222_taraxa": {
+    "name": "Taraxacum",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4222_taraxa.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Kuranta",
+    "tags": [
+      "Healing"
+    ],
+    "main_faction": [
+      "Yan"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4056_titi": {
+    "name": "Titi",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4056_titi.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Feline",
+    "tags": [
+      "Healing",
+      "Defense",
+      "Crowd-Control"
+    ],
+    "main_faction": [
+      "Sargon"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1022_flwr2": {
+    "name": "Perfumer the Distilled",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1022_flwr2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Vulpo",
+    "tags": [
+      "Support",
+      "Survival"
+    ],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [
+      "Auto Recovery",
+      "Passive"
+    ],
+    "release_year": 2026
+  },
+  "char_4166_varkis": {
+    "name": "Varkáris",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4166_varkis.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Melee",
+    "race": "Forte",
+    "tags": [
+      "AoE",
+      "Survival"
+    ],
+    "main_faction": [
+      "Minos"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
   }
 }
