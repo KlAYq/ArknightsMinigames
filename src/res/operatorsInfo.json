@@ -152,7 +152,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4093_frston": {
     "name": "Friston-3",
@@ -413,31 +413,6 @@
     ],
     "release_year": 2020
   },
-  "char_504_rguard": {
-    "name": "Reserve Operator - Melee",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_504_rguard.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "Defense"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_192_falco": {
     "name": "Plume",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_192_falco.png",
@@ -570,31 +545,6 @@
     ],
     "release_year": 2020
   },
-  "char_514_rdfend": {
-    "name": "Reserve Operator - Defender",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_514_rdfend.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "Defense"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_284_spot": {
     "name": "Spot",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_284_spot.png",
@@ -668,31 +618,6 @@
     "main_faction": [
       "Rhodes Island",
       "Reserve4"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
-  "char_507_rsnipe": {
-    "name": "Reserve Operator - Sniper",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_507_rsnipe.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Ranged",
-    "race": "Undisclosed",
-    "tags": [
-      "DPS"
-    ],
-    "main_faction": [
-      "Rhodes Island"
     ],
     "skill_type": [
       "Auto Recovery"
@@ -777,31 +702,6 @@
     ],
     "release_year": 2020
   },
-  "char_506_rmedic": {
-    "name": "Reserve Operator - Logistics",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_506_rmedic.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Ranged",
-    "race": "Undisclosed",
-    "tags": [
-      "Healing"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_210_stward": {
     "name": "Steward",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_210_stward.png",
@@ -822,31 +722,6 @@
     "main_faction": [
       "Rhodes Island",
       "Reserve4"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
-  "char_505_rcast": {
-    "name": "Reserve Operator - Caster",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_505_rcast.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Ranged",
-    "race": "Undisclosed",
-    "tags": [
-      "DPS"
-    ],
-    "main_faction": [
-      "Rhodes Island"
     ],
     "skill_type": [
       "Auto Recovery"
@@ -899,31 +774,6 @@
     ],
     "main_faction": [
       "Victoria"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
-  "char_604_ccast": {
-    "name": "Reserve Operator - Caster",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_604_ccast.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Ranged",
-    "race": "Undisclosed",
-    "tags": [
-      "DPS"
-    ],
-    "main_faction": [
-      "Rhodes Island"
     ],
     "skill_type": [
       "Auto Recovery"
@@ -1163,31 +1013,6 @@
     ],
     "release_year": 2020
   },
-  "char_603_csnipe": {
-    "name": "Reserve Operator - Sniper",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_603_csnipe.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Ranged",
-    "race": "Undisclosed",
-    "tags": [
-      "DPS"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_118_yuki": {
     "name": "Shirayuki",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_118_yuki.png",
@@ -1395,32 +1220,6 @@
     ],
     "release_year": 2020
   },
-  "char_600_cpione": {
-    "name": "Reserve Operator - Vanguard",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_600_cpione.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "DP-Recovery",
-      "DPS"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_290_vigna": {
     "name": "Vigna",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_290_vigna.png",
@@ -1577,32 +1376,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
-  },
-  "char_601_cguard": {
-    "name": "Reserve Operator - Guard",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_601_cguard.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "DPS"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_193_frostl": {
     "name": "Frostleaf",
@@ -1885,32 +1659,6 @@
     ],
     "release_year": 2020
   },
-  "char_607_cspec": {
-    "name": "Reserve Operator - Specialist",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_607_cspec.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "Fast-Redeploy",
-      ""
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_272_strong": {
     "name": "Jaye",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_272_strong.png",
@@ -2026,31 +1774,6 @@
     "gender": "Female",
     "position": "Ranged",
     "race": "Vulpo",
-    "tags": [
-      "Healing"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
-  "char_605_cmedic": {
-    "name": "Reserve Operator - Medic",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_605_cmedic.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Ranged",
-    "race": "Undisclosed",
     "tags": [
       "Healing"
     ],
@@ -2214,31 +1937,6 @@
     ],
     "release_year": 2020
   },
-  "char_602_cdfend": {
-    "name": "Reserve Operator - Defender",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_602_cdfend.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "Defense"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_4130_luton": {
     "name": "Lutonada",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4130_luton.png",
@@ -2385,31 +2083,6 @@
     "tags": [
       "Slow",
       "Healing"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
-  "char_606_csuppo": {
-    "name": "Reserve Operator - Supporter",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_606_csuppo.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Ranged",
-    "race": "Undisclosed",
-    "tags": [
-      "Slow"
     ],
     "main_faction": [
       "Rhodes Island"
@@ -2785,7 +2458,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_261_sddrag": {
     "name": "Reed",
@@ -3780,7 +3453,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_486_takila": {
     "name": "Tequila",
@@ -5690,7 +5363,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4025_aprot2": {
     "name": "Shalem",
@@ -6729,7 +6402,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_487_bobb": {
     "name": "Bobbing",
@@ -7040,7 +6713,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4191_tippi": {
     "name": "Tippi",
@@ -8345,7 +8018,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_248_mgllan": {
     "name": "Magallan",
@@ -10136,31 +9809,6 @@
     ],
     "release_year": 2020
   },
-  "char_609_acguad": {
-    "name": "Sharp",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_609_acguad.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "DPS"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_1032_excu2": {
     "name": "Executor the Ex Foedere",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1032_excu2.png",
@@ -10725,6 +10373,698 @@
     ],
     "main_faction": [
       "Minos"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4212_nasti": {
+    "name": "Nasti",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4212_nasti.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Sarkaz",
+    "tags": [
+      "Support",
+      "Defense"
+    ],
+    "main_faction": [
+      "Rhine Lab"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4214_cairn": {
+    "name": "Cairn",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4214_cairn.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Feline",
+    "tags": [
+      "Defense",
+      "Elemental"
+    ],
+    "main_faction": [
+      "Columbia"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4213_skybx": {
+    "name": "Skybox",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4213_skybx.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Savra",
+    "tags": [
+      "AoE"
+    ],
+    "main_faction": [
+      "Columbia"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1045_svash2": {
+    "name": "SilverAsh the Reignfrost",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1045_svash2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Melee",
+    "race": "Feline",
+    "tags": [
+      "DP-Recovery",
+      "Support"
+    ],
+    "main_faction": [
+      "Kjerag"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1047_halo2": {
+    "name": "Astgenne the Lightchaser",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1047_halo2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Liberi",
+    "tags": [
+      "Slow",
+      "DPS",
+      "Support"
+    ],
+    "main_faction": [
+      "Rhine Lab"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1046_sbell2": {
+    "name": "Pramanix the Prerita",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1046_sbell2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Feline",
+    "tags": [
+      "AoE",
+      "Crowd-Control"
+    ],
+    "main_faction": [
+      "Kjerag"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4211_snhunt": {
+    "name": "Snow Hunter",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4211_snhunt.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Ursus",
+    "tags": [
+      "Crowd-Control",
+      "Nuker"
+    ],
+    "main_faction": [
+      "Kjerag"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_394_hadiya": {
+    "name": "Hadiya",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_394_hadiya.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Caprinae",
+    "tags": [
+      "DPS",
+      "Crowd-Control"
+    ],
+    "main_faction": [
+      "Sargon"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4051_akkord": {
+    "name": "Akkord",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4051_akkord.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Caprinae",
+    "tags": [
+      "AoE",
+      "DPS"
+    ],
+    "main_faction": [
+      "Leithanien"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4204_mantra": {
+    "name": "Mantra",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4204_mantra.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Phidia",
+    "tags": [
+      "Elemental",
+      "DPS",
+      "Crowd-Control"
+    ],
+    "main_faction": [
+      "Elite Op"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4207_branch": {
+    "name": "Vetochki",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4207_branch.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Ursus",
+    "tags": [
+      "Defense",
+      "Survival"
+    ],
+    "main_faction": [
+      "Ursus"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4183_mortis": {
+    "name": "Mutsumi Wakaba",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4183_mortis.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Undisclosed",
+    "tags": [
+      "Defense",
+      "Fast-Redeploy"
+    ],
+    "main_faction": [
+      "Ave Mujica"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4184_dolris": {
+    "name": "Uika Misumi",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4184_dolris.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Undisclosed",
+    "tags": [
+      "Support",
+      "Healing"
+    ],
+    "main_faction": [
+      "Ave Mujica"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1044_hsgma2": {
+    "name": "Hoshiguma the Breacher",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1044_hsgma2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Oni",
+    "tags": [
+      "DPS",
+      "Survival"
+    ],
+    "main_faction": [
+      "Lungmen Guard Department"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4202_haruka": {
+    "name": "Haruka",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4202_haruka.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Aegir",
+    "tags": [
+      "Support",
+      "Survival",
+      "Healing"
+    ],
+    "main_faction": [
+      "Higashi"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4199_makiri": {
+    "name": "Matsukiri",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4199_makiri.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Melee",
+    "race": "Lupo",
+    "tags": [
+      "Support",
+      "DP-Recovery"
+    ],
+    "main_faction": [
+      "Higashi"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4203_kichi": {
+    "name": "Kichisei",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4203_kichi.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Perro",
+    "tags": [
+      "AoE"
+    ],
+    "main_faction": [
+      "Higashi"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1043_leizi2": {
+    "name": "Leizi the Thunderbringer",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1043_leizi2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Kylin",
+    "tags": [
+      "DPS",
+      "Nuker"
+    ],
+    "main_faction": [
+      "Yan"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2025
+  },
+  "char_4196_reckpr": {
+    "name": "Record Keeper",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4196_reckpr.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Ranged",
+    "race": "Perro",
+    "tags": [
+      "Healing"
+    ],
+    "main_faction": [
+      "Yan"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2025
+  },
+  "char_1037_amiya3": {
+    "name": "Amiya",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1037_amiya3.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Cautus / Chimera",
+    "tags": [
+      "Healing",
+      "DPS"
+    ],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2024
+  },
+  "char_616_pithst": {
+    "name": "Alliance/Supportive Operator",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_616_pithst.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "",
+    "position": "Ranged",
+    "race": "",
+    "tags": [
+      "Elemental"
+    ],
+    "main_faction": [],
+    "skill_type": [],
+    "release_year": 2020
+  },
+  "char_4208_wintim": {
+    "name": "Snegurochka",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4208_wintim.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Liberi",
+    "tags": [
+      "DP-Recovery",
+      "Fast-Redeploy"
+    ],
+    "main_faction": [
+      "Ursus"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_4182_oblvns": {
+    "name": "Sakiko Togawa",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4182_oblvns.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Undisclosed",
+    "tags": [
+      "DPS"
+    ],
+    "main_faction": [
+      "Ave Mujica"
+    ],
+    "skill_type": [],
+    "release_year": 2026
+  },
+  "char_4185_amoris": {
+    "name": "Nyamu Yūtenji",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4185_amoris.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Undisclosed",
+    "tags": [
+      "AoE",
+      "DPS",
+      "Debuff"
+    ],
+    "main_faction": [
+      "Ave Mujica"
+    ],
+    "skill_type": [],
+    "release_year": 2026
+  },
+  "char_4186_tmoris": {
+    "name": "Umiri Yahata",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4186_tmoris.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Undisclosed",
+    "tags": [
+      "DPS",
+      "Crowd-Control"
+    ],
+    "main_faction": [
+      "Ave Mujica"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2026
+  },
+  "char_1001_amiya2": {
+    "name": "Amiya",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1001_amiya2.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Cautus / Chimera",
+    "tags": [
+      "DPS",
+      "Support"
+    ],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [
+      "Auto Recovery"
+    ],
+    "release_year": 2021
+  },
+  "char_4224_turdus": {
+    "name": "Ukusik",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4224_turdus.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Ranged",
+    "race": "Liberi",
+    "tags": [
+      "Healing"
+    ],
+    "main_faction": [
+      "Ursus"
     ],
     "skill_type": [
       "Auto Recovery"
