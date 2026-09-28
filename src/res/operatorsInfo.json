@@ -25,32 +25,6 @@
     ],
     "release_year": 2020
   },
-  "char_286_cast3": {
-    "name": "Castle-3",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_286_cast3.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "Robot",
-      "Support"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_376_therex": {
     "name": "THRM-EX",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_376_therex.png",
@@ -62,7 +36,7 @@
         ""
       ]
     ],
-    "gender": "Female",
+    "gender": "Male",
     "position": "Melee",
     "race": "Undisclosed",
     "tags": [
@@ -127,7 +101,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4091_ulika": {
     "name": "U-Official",
@@ -165,7 +139,7 @@
         ""
       ]
     ],
-    "gender": "Female",
+    "gender": "Male",
     "position": "Melee",
     "race": "Undisclosed",
     "tags": [
@@ -178,7 +152,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4136_phonor": {
     "name": "PhonoR-0",
@@ -204,7 +178,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4188_confes": {
     "name": "CONFESS-47",
@@ -217,7 +191,7 @@
         ""
       ]
     ],
-    "gender": "Female",
+    "gender": "Male",
     "position": "Melee",
     "race": "Undisclosed",
     "tags": [
@@ -230,7 +204,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_502_nblade": {
     "name": "Yato",
@@ -881,7 +855,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4004_pudd": {
     "name": "Pudding",
@@ -906,7 +880,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_235_jesica": {
     "name": "Jessica",
@@ -1063,7 +1037,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_302_glaze": {
     "name": "Ambriel",
@@ -1114,7 +1088,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4062_totter": {
     "name": "Totter",
@@ -1139,7 +1113,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4100_caper": {
     "name": "Caper",
@@ -1164,7 +1138,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_198_blackd": {
     "name": "Courier",
@@ -1296,7 +1270,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_130_doberm": {
     "name": "Dobermann",
@@ -1481,32 +1455,6 @@
     ],
     "release_year": 2020
   },
-  "char_337_utage": {
-    "name": "Utage",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_337_utage.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Unknown",
-    "tags": [
-      "DPS",
-      "Survival"
-    ],
-    "main_faction": [
-      "Higashi"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_271_spikes": {
     "name": "Arene",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_271_spikes.png",
@@ -1530,7 +1478,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4067_lolxh": {
     "name": "Luo Xiaohei",
@@ -1555,7 +1503,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4063_quartz": {
     "name": "Quartz",
@@ -1580,7 +1528,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_491_humus": {
     "name": "Humus",
@@ -1606,7 +1554,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_445_wscoot": {
     "name": "Windscoot",
@@ -1631,7 +1579,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_237_gravel": {
     "name": "Gravel",
@@ -1683,7 +1631,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_236_rope": {
     "name": "Rope",
@@ -1834,7 +1782,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4041_chnut": {
     "name": "Chestnut",
@@ -1859,7 +1807,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_199_yak": {
     "name": "Matterhorn",
@@ -1935,7 +1883,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4130_luton": {
     "name": "Lutonada",
@@ -1961,7 +1909,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_196_sunbr": {
     "name": "Gummy",
@@ -2116,7 +2064,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_355_ethan": {
     "name": "Ethan",
@@ -2193,7 +2141,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4165_ctrail": {
     "name": "Contrail",
@@ -2219,7 +2167,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_128_plosis": {
     "name": "Ptilopsis",
@@ -2298,7 +2246,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_115_headbr": {
     "name": "Zima",
@@ -2406,7 +2354,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_513_apionr": {
     "name": "Tulip",
@@ -2511,7 +2459,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_1036_fang2": {
     "name": "Fang the Fire-Sharpened",
@@ -2537,7 +2485,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_401_elysm": {
     "name": "Elysium",
@@ -2589,7 +2537,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_476_blkngt": {
     "name": "Blacknight",
@@ -2615,7 +2563,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4147_mitm": {
     "name": "Mitm",
@@ -2641,7 +2589,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_497_ctable": {
     "name": "Cantabile",
@@ -2667,7 +2615,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4017_puzzle": {
     "name": "Puzzle",
@@ -2693,7 +2641,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4144_chilc": {
     "name": "Chilchuck",
@@ -2719,7 +2667,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4052_surfer": {
     "name": "Surfer",
@@ -2746,7 +2694,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_308_swire": {
     "name": "Swire",
@@ -2799,7 +2747,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4106_bryota": {
     "name": "Bryophyta",
@@ -2826,7 +2774,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4125_rdoc": {
     "name": "Doc",
@@ -2852,7 +2800,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_106_franka": {
     "name": "Franka",
@@ -2931,7 +2879,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_508_aguard": {
     "name": "Sharp",
@@ -2983,7 +2931,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_155_tiger": {
     "name": "Indra",
@@ -3035,7 +2983,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_157_dagda": {
     "name": "Dagda",
@@ -3062,7 +3010,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_140_whitew": {
     "name": "Lappland",
@@ -3141,7 +3089,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4083_chimes": {
     "name": "Wind Chimes",
@@ -3166,7 +3114,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_252_bibeak": {
     "name": "Bibeak",
@@ -3218,7 +3166,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_143_ghost": {
     "name": "Specter",
@@ -3298,7 +3246,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_274_astesi": {
     "name": "Astesia",
@@ -3376,7 +3324,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_1030_noirc2": {
     "name": "Rathalos S Noir Corne",
@@ -3403,7 +3351,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_421_crow": {
     "name": "La Pluma",
@@ -3428,7 +3376,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4066_highmo": {
     "name": "Highmore",
@@ -3478,7 +3426,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4131_odda": {
     "name": "Odda",
@@ -3504,7 +3452,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4187_graceb": {
     "name": "Gracebearer",
@@ -3530,7 +3478,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_129_bluep": {
     "name": "Blue Poison",
@@ -3655,7 +3603,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_1021_kroos2": {
     "name": "Kroos the Keen Glint",
@@ -3706,7 +3654,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_219_meteo": {
     "name": "Meteorite",
@@ -3784,7 +3732,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_279_excu": {
     "name": "Executor",
@@ -3835,7 +3783,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_002_amiya": {
     "name": "Amiya",
@@ -3917,7 +3865,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_466_qanik": {
     "name": "Qanipalaat",
@@ -3943,7 +3891,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_166_skfire": {
     "name": "Skyfire",
@@ -4045,7 +3993,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_344_beewax": {
     "name": "Beeswax",
@@ -4123,7 +4071,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_388_mint": {
     "name": "Mint",
@@ -4149,7 +4097,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_338_iris": {
     "name": "Iris",
@@ -4174,7 +4122,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_297_hamoni": {
     "name": "Harmonie",
@@ -4200,7 +4148,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4110_delphn": {
     "name": "Delphine",
@@ -4225,7 +4173,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1011_lava2": {
     "name": "Lava the Purgatory",
@@ -4276,7 +4224,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_446_aroma": {
     "name": "Aroma",
@@ -4302,7 +4250,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4013_kjera": {
     "name": "Kjera",
@@ -4329,7 +4277,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4040_rockr": {
     "name": "Rockrock",
@@ -4354,7 +4302,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4054_malist": {
     "name": "Minimalist",
@@ -4379,7 +4327,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_499_kaitou": {
     "name": "Diamante",
@@ -4405,7 +4353,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4081_warmy": {
     "name": "Warmy",
@@ -4431,7 +4379,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4198_christ": {
     "name": "Miss.Christine",
@@ -4457,7 +4405,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4164_tecno": {
     "name": "Tecno",
@@ -4482,7 +4430,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_242_otter": {
     "name": "Mayer",
@@ -4536,7 +4484,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4140_lasher": {
     "name": "Sand Reckoner",
@@ -4562,7 +4510,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_108_silent": {
     "name": "Silence",
@@ -4716,7 +4664,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4173_nowell": {
     "name": "Nowell",
@@ -4741,7 +4689,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_402_tuye": {
     "name": "Tuye",
@@ -4766,7 +4714,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_473_mberry": {
     "name": "Mulberry",
@@ -4791,7 +4739,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_449_glider": {
     "name": "Honeyberry",
@@ -4816,7 +4764,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4114_harold": {
     "name": "Harold",
@@ -4841,7 +4789,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1024_hbisc2": {
     "name": "Hibiscus the Purifier",
@@ -4891,7 +4839,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4071_peper": {
     "name": "Paprika",
@@ -4916,7 +4864,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4139_papyrs": {
     "name": "Papyrus",
@@ -4941,7 +4889,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_148_nearl": {
     "name": "Nearl",
@@ -5020,7 +4968,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4143_sensi": {
     "name": "Senshi",
@@ -5046,7 +4994,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_144_red": {
     "name": "Projekt Red",
@@ -5126,7 +5074,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_455_nothin": {
     "name": "Mr. Nothing",
@@ -5152,7 +5100,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4155_talr": {
     "name": "Figurino",
@@ -5178,7 +5126,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_107_liskam": {
     "name": "Liskarm",
@@ -5232,7 +5180,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_201_moeshd": {
     "name": "Croissant",
@@ -5415,7 +5363,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_457_blitz": {
     "name": "Blitz",
@@ -5441,7 +5389,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_304_zebra": {
     "name": "Heavyrain",
@@ -5467,7 +5415,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_431_ashlok": {
     "name": "Ashlock",
@@ -5494,7 +5442,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_493_firwhl": {
     "name": "Firewhistle",
@@ -5520,7 +5468,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_422_aurora": {
     "name": "Aurora",
@@ -5547,7 +5495,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_464_cement": {
     "name": "Cement",
@@ -5572,7 +5520,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4148_philae": {
     "name": "Philae",
@@ -5598,7 +5546,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_145_prove": {
     "name": "Provence",
@@ -5649,7 +5597,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_158_milu": {
     "name": "Firewatch",
@@ -5702,7 +5650,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4014_lunacu": {
     "name": "Lunacub",
@@ -5728,7 +5676,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_363_toddi": {
     "name": "Toddifons",
@@ -5753,7 +5701,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4043_erato": {
     "name": "Erato",
@@ -5779,7 +5727,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_1027_greyy2": {
     "name": "Greyy the Lightningbearer",
@@ -5830,7 +5778,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4177_brigid": {
     "name": "Brigid",
@@ -5856,7 +5804,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4015_spuria": {
     "name": "Spuria",
@@ -5882,7 +5830,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_173_slchan": {
     "name": "Cliffheart",
@@ -5961,7 +5909,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_174_slbell": {
     "name": "Pramanix",
@@ -6037,7 +5985,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_195_glassb": {
     "name": "Istina",
@@ -6116,7 +6064,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4122_grabds": {
     "name": "Grain Buds",
@@ -6142,7 +6090,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_433_windft": {
     "name": "Windflit",
@@ -6168,7 +6116,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4162_cathy": {
     "name": "Catherine",
@@ -6194,7 +6142,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4178_alanna": {
     "name": "Alanna",
@@ -6220,7 +6168,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_101_sora": {
     "name": "Sora",
@@ -6273,7 +6221,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_343_tknogi": {
     "name": "Tsukinogi",
@@ -6325,7 +6273,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_492_quercu": {
     "name": "Quercus",
@@ -6351,7 +6299,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4172_xingzh": {
     "name": "Xingzhu",
@@ -6377,7 +6325,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4102_threye": {
     "name": "Valarqvin",
@@ -6427,7 +6375,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_215_mantic": {
     "name": "Manticore",
@@ -6479,7 +6427,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_241_panda": {
     "name": "FEater",
@@ -6531,7 +6479,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_451_robin": {
     "name": "Robin",
@@ -6557,7 +6505,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_458_rfrost": {
     "name": "Frost",
@@ -6583,7 +6531,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4171_wulfen": {
     "name": "Wulfenite",
@@ -6609,7 +6557,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_369_bena": {
     "name": "Bena",
@@ -6635,7 +6583,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4016_kazema": {
     "name": "Kazemaru",
@@ -6661,7 +6609,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4124_iana": {
     "name": "Iana",
@@ -6687,7 +6635,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4151_tinman": {
     "name": "Tin Man",
@@ -6739,7 +6687,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_103_angel": {
     "name": "Exusiai",
@@ -6815,7 +6763,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_611_acnipe": {
     "name": "Stormeye",
@@ -6891,7 +6839,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_430_fartth": {
     "name": "Fartooth",
@@ -6917,7 +6865,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4193_lemuen": {
     "name": "Lemuen",
@@ -6943,7 +6891,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_113_cqbw": {
     "name": "W",
@@ -6994,7 +6942,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_197_poca": {
     "name": "Rosa",
@@ -7046,7 +6994,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_391_rosmon": {
     "name": "Rosmontis",
@@ -7072,7 +7020,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_1035_wisdel": {
     "name": "Wiš'adel",
@@ -7097,7 +7045,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1013_chen2": {
     "name": "Ch'en the Holungday",
@@ -7150,7 +7098,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4138_narant": {
     "name": "Narantuya",
@@ -7175,7 +7123,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_112_siege": {
     "name": "Siege",
@@ -7254,7 +7202,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4026_vulpis": {
     "name": "Vulpisfoglia",
@@ -7280,7 +7228,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_479_sleach": {
     "name": "Saileach",
@@ -7306,7 +7254,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_420_flamtl": {
     "name": "Flametail",
@@ -7333,7 +7281,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_608_acpion": {
     "name": "Tulip",
@@ -7385,7 +7333,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_249_mlyss": {
     "name": "Muelsyse",
@@ -7412,7 +7360,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4087_ines": {
     "name": "Ines",
@@ -7438,7 +7386,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_134_ifrit": {
     "name": "Ifrit",
@@ -7570,7 +7518,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4133_logos": {
     "name": "Logos",
@@ -7596,7 +7544,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_2015_dusk": {
     "name": "Dusk",
@@ -7624,7 +7572,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4141_marcil": {
     "name": "Marcille",
@@ -7651,7 +7599,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_612_accast": {
     "name": "Pith",
@@ -7702,7 +7650,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_426_billro": {
     "name": "Carnelian",
@@ -7728,7 +7676,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4080_lin": {
     "name": "Lin",
@@ -7754,7 +7702,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_377_gdglow": {
     "name": "Goldenglow",
@@ -7779,7 +7727,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_1038_whitw2": {
     "name": "Lappland the Decadenza",
@@ -7805,7 +7753,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4046_ebnhlz": {
     "name": "Ebenholz",
@@ -7830,7 +7778,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4146_nymph": {
     "name": "Nymph",
@@ -7857,7 +7805,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_1040_blaze2": {
     "name": "Blaze the Igniting Spark",
@@ -7885,7 +7833,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_450_necras": {
     "name": "Necrass",
@@ -7912,7 +7860,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_206_gnosis": {
     "name": "Gnosis",
@@ -7938,7 +7886,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_291_aglina": {
     "name": "Angelina",
@@ -8100,7 +8048,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1031_slent2": {
     "name": "Silence the Paradigmatic",
@@ -8128,7 +8076,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_2023_ling": {
     "name": "Ling",
@@ -8156,7 +8104,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4072_ironmn": {
     "name": "Stainless",
@@ -8182,7 +8130,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_245_cello": {
     "name": "Virtuosa",
@@ -8208,7 +8156,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1042_phatm2": {
     "name": "Tragodia",
@@ -8234,7 +8182,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_250_phatom": {
     "name": "Phantom",
@@ -8340,7 +8288,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_615_acspec": {
     "name": "Misery",
@@ -8394,7 +8342,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_1033_swire2": {
     "name": "Swire the Elegant Wit",
@@ -8420,7 +8368,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_400_weedy": {
     "name": "Weedy",
@@ -8501,7 +8449,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_474_glady": {
     "name": "Gladiia",
@@ -8529,7 +8477,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_437_mizuki": {
     "name": "Mizuki",
@@ -8555,7 +8503,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4132_ascln": {
     "name": "Ascalon",
@@ -8582,7 +8530,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1023_ghost2": {
     "name": "Specter the Unchained",
@@ -8636,7 +8584,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4123_ela": {
     "name": "Ela",
@@ -8663,7 +8611,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1039_thorn2": {
     "name": "Thorns the Lodestar",
@@ -8690,7 +8638,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_147_shining": {
     "name": "Shining",
@@ -8819,7 +8767,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_1016_agoat2": {
     "name": "Eyjafjalla the Hvít Aska",
@@ -8899,7 +8847,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_136_hsguma": {
     "name": "Hoshiguma",
@@ -8922,31 +8870,6 @@
     "main_faction": [
       "Lungmen",
       "Lgd"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
-  "char_610_acfend": {
-    "name": "Mechanist",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_610_acfend.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "Defense"
-    ],
-    "main_faction": [
-      "Rhodes Island"
     ],
     "skill_type": [
       "Auto Recovery"
@@ -9006,7 +8929,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_2025_shu": {
     "name": "Shu",
@@ -9034,7 +8957,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_2014_nian": {
     "name": "Nian",
@@ -9088,7 +9011,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4065_judge": {
     "name": "Penance",
@@ -9114,7 +9037,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_416_zumama": {
     "name": "Eunectes",
@@ -9141,7 +9064,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4039_horn": {
     "name": "Horn",
@@ -9167,7 +9090,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_1034_jesca2": {
     "name": "Jessica the Liberated",
@@ -9195,7 +9118,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4194_rmixer": {
     "name": "Sankta Miksaparato",
@@ -9222,7 +9145,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_2026_yu": {
     "name": "Yu",
@@ -9249,7 +9172,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_264_f12yin": {
     "name": "Mountain",
@@ -9275,7 +9198,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_2024_chyue": {
     "name": "Chongyue",
@@ -9301,7 +9224,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_172_svrash": {
     "name": "SilverAsh",
@@ -9354,7 +9277,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4082_qiubai": {
     "name": "Qiubai",
@@ -9380,7 +9303,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4088_hodrer": {
     "name": "Hoederer",
@@ -9405,7 +9328,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4145_ulpia": {
     "name": "Ulpianus",
@@ -9432,7 +9355,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_4058_pepe": {
     "name": "Pepe",
@@ -9458,7 +9381,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_010_chen": {
     "name": "Ch'en",
@@ -9518,7 +9441,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2022
   },
   "char_4116_blkkgt": {
     "name": "Degenbrecher",
@@ -9546,7 +9469,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_017_huang": {
     "name": "Blaze",
@@ -9626,7 +9549,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_4098_vvana": {
     "name": "Viviana",
@@ -9652,7 +9575,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1019_siege2": {
     "name": "Vina Victoria",
@@ -9730,7 +9653,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_485_pallas": {
     "name": "Pallas",
@@ -9756,7 +9679,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_1014_nearl2": {
     "name": "Nearl the Radiant Knight",
@@ -9807,7 +9730,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2024
   },
   "char_1032_excu2": {
     "name": "Executor the Ex Foedere",
@@ -9832,7 +9755,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2023
   },
   "char_4010_etlchi": {
     "name": "Entelechia",
@@ -9858,7 +9781,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2025
   },
   "char_4064_mlynar": {
     "name": "Młynar",
@@ -10012,7 +9935,7 @@
     "skill_type": [
       "Auto Recovery"
     ],
-    "release_year": 2020
+    "release_year": 2021
   },
   "char_164_nightm": {
     "name": "Nightmare",
@@ -10899,27 +10822,6 @@
     ],
     "release_year": 2024
   },
-  "char_616_pithst": {
-    "name": "Alliance/Supportive Operator",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_616_pithst.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "",
-    "position": "Ranged",
-    "race": "",
-    "tags": [
-      "Elemental"
-    ],
-    "main_faction": [],
-    "skill_type": [],
-    "release_year": 2020
-  },
   "char_4208_wintim": {
     "name": "Snegurochka",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4208_wintim.png",
@@ -11070,5 +10972,56 @@
       "Auto Recovery"
     ],
     "release_year": 2026
+  },
+  "char_337_utage": {
+    "name": "Utage",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_337_utage.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Female",
+    "position": "Melee",
+    "race": "Unknown",
+    "tags": [
+      "DPS",
+      "Survival"
+    ],
+    "main_faction": [
+      "Higashi"
+    ],
+    "skill_type": [
+      "Passive",
+      "Auto Recovery"
+    ],
+    "release_year": 2020
+  },
+  "char_286_cast3": {
+    "name": "Castle-3",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_286_cast3.png",
+    "emojis": [
+      [
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Melee",
+    "race": "",
+    "tags": [
+      "Support",
+      "Robot"
+    ],
+    "main_faction": [
+      "Rhodes Island"
+    ],
+    "skill_type": [],
+    "release_year": 2020
   }
 }
