@@ -21,7 +21,7 @@
       "Rhodes Island"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2020
   },
@@ -47,7 +47,7 @@
       "Rhodes Island"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2020
   },
@@ -74,7 +74,7 @@
       "Pinus"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2020
   },
@@ -124,7 +124,7 @@
       "Rhodes Island"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2024
   },
@@ -150,7 +150,7 @@
       "Rhodes Island"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2023
   },
@@ -176,7 +176,7 @@
       "Rhodes Island"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2024
   },
@@ -202,7 +202,7 @@
       "Laterano"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2025
   },
@@ -1242,7 +1242,7 @@
       "Rhodes Island"
     ],
     "skill_type": [
-      "Auto Recovery"
+      "None"
     ],
     "release_year": 2020
   },
@@ -8184,33 +8184,6 @@
     ],
     "release_year": 2025
   },
-  "char_250_phatom": {
-    "name": "Phantom",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_250_phatom.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Male",
-    "position": "Melee",
-    "race": "Feline",
-    "tags": [
-      "Fast-Redeploy",
-      "Crowd-Control",
-      "DPS"
-    ],
-    "main_faction": [
-      "Victoria"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
-  },
   "char_1028_texas2": {
     "name": "Texas the Omertosa",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1028_texas2.png",
@@ -11013,7 +10986,7 @@
     ],
     "gender": "Male",
     "position": "Melee",
-    "race": "",
+    "race": "None",
     "tags": [
       "Support",
       "Robot"
@@ -11021,7 +10994,35 @@
     "main_faction": [
       "Rhodes Island"
     ],
-    "skill_type": [],
+    "skill_type": [
+      "None"
+    ],
+    "release_year": 2020
+  },
+  "char_250_phatom": {
+    "name": "Phantom",
+    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_250_phatom.png",
+    "emojis": [
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "gender": "Male",
+    "position": "Melee",
+    "race": "Feline",
+    "tags": [
+      "Fast-Redeploy",
+      "Crowd-Control",
+      "DPS"
+    ],
+    "main_faction": [
+      "Victoria"
+    ],
+    "skill_type": [
+      "Passive"
+    ],
     "release_year": 2020
   }
 }
