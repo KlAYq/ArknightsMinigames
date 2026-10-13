@@ -4,15 +4,15 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_285_medic2.png",
     "emojis": [
       [
-        "",
-        "",
-        "",
-        ""
+        "🤖",
+        "🏥",
+        "💉",
+        "❤️‍🩹"
       ]
     ],
     "gender": "Female",
     "position": "Ranged",
-    "race": "Undisclosed",
+    "race": "None",
     "tags": [
       "Robot",
       "Healing"
@@ -30,15 +30,15 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_376_therex.png",
     "emojis": [
       [
-        "",
-        "",
-        "",
-        ""
+        "🤖",
+        "🔥",
+        "💥",
+        "🧨"
       ]
     ],
     "gender": "Male",
     "position": "Melee",
-    "race": "Undisclosed",
+    "race": "None",
     "tags": [
       "Robot",
       "Nuker"
@@ -56,22 +56,21 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4000_jnight.png",
     "emojis": [
       [
-        "",
-        "",
-        "",
-        ""
+        "🤖",
+        "⚔️",
+        "🐴",
+        "🔰"
       ]
     ],
     "gender": "Female",
     "position": "Ranged",
-    "race": "Undisclosed",
+    "race": "None",
     "tags": [
       "Robot",
       "Support"
     ],
     "main_faction": [
-      "Kazimiers",
-      "Pinus"
+      "Pinus Sylvestris"
     ],
     "skill_type": [
       "None"
@@ -83,10 +82,10 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4077_palico.png",
     "emojis": [
       [
-        "",
-        "",
-        "",
-        ""
+        "🐱",
+        "🎮",
+        "💣",
+        "🎲"
       ]
     ],
     "gender": "Unknown",
@@ -133,15 +132,15 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4093_frston.png",
     "emojis": [
       [
-        "",
-        "",
-        "",
-        ""
+        "🤖",
+        "🛡️",
+        "⚙️",
+        "🔩"
       ]
     ],
     "gender": "Male",
     "position": "Melee",
-    "race": "Undisclosed",
+    "race": "None",
     "tags": [
       "Robot",
       "Defense"
@@ -159,15 +158,15 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4136_phonor.png",
     "emojis": [
       [
-        "",
-        "",
-        "",
-        ""
+        "🤖",
+        "🎵",
+        "⚡",
+        "🔊"
       ]
     ],
     "gender": "Female",
     "position": "Ranged",
-    "race": "Undisclosed",
+    "race": "None",
     "tags": [
       "Robot",
       "Elemental"
@@ -185,15 +184,15 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4188_confes.png",
     "emojis": [
       [
-        "",
-        "",
-        "",
-        ""
+        "🤖",
+        "⛪",
+        "🕊️",
+        "🤫"
       ]
     ],
     "gender": "Male",
     "position": "Melee",
-    "race": "Undisclosed",
+    "race": "None",
     "tags": [
       "Robot",
       "Crowd-Control"
@@ -2880,32 +2879,6 @@
       "Auto Recovery"
     ],
     "release_year": 2023
-  },
-  "char_508_aguard": {
-    "name": "Sharp",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_508_aguard.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Male",
-    "position": "Melee",
-    "race": "Phidia",
-    "tags": [
-      "DPS",
-      "Survival"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2020
   },
   "char_4142_laios": {
     "name": "Laios",
@@ -11004,6 +10977,7 @@
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_250_phatom.png",
     "emojis": [
       [
+        "",
         "",
         "",
         ""
