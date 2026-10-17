@@ -6,6 +6,46 @@ import operatorData from "../res/operatorsInfo.json";
 import questionIcon from "../res/questionMark.png";
 import { VStack, HStack, Text } from "@chakra-ui/react";
 
+const isImage = (val) => {
+    if (!val || typeof val !== "string") {
+        console.log("is emoji")
+        return false;
+    }
+    const trimmed = val.trim();
+    if (!trimmed) {
+        console.log("is emoji")
+        return false;
+    }
+    console.log("is img")
+    return (
+        /\.(png|jpe?g|svg|webp|gif|ico)$/i.test(trimmed) ||
+        trimmed.startsWith("http://") ||
+        trimmed.startsWith("https://") ||
+        trimmed.startsWith("/")
+    );
+};
+
+const resolveImagePath = (val) => {
+    console.log("resolving img: " + val);
+    if (!val || typeof val !== "string") return "";
+    let clean = val.trim();
+    if (clean.startsWith("http://") || clean.startsWith("https://")) {
+        return clean;
+    }
+    clean = clean.replace(/^\/?public\//, "/");
+    if (!clean.startsWith("/")) {
+        if (clean.startsWith("res/")) {
+            clean = "/" + clean;
+        } else if (clean.startsWith("icon/")) {
+            clean = "/res/" + clean;
+        } else {
+            clean = "/res/icon/" + clean;
+        }
+    }
+    const publicUrl = process.env.PUBLIC_URL || "";
+    return `${publicUrl}${clean}`;
+};
+
 function Emoji() {
     const [revealed, setRevealed] = useState(1);
     const [guesses, setGuesses] = useState([]);
@@ -109,10 +149,18 @@ function Emoji() {
                 <h1 className="title">Which operator do these emojis describe?</h1>
                 <h3 style={{ color: "grey" }}> Some operator still don't have emojis set yet, so you will see blank emoji</h3>
                 <div className="emoji-container">
-                    {emoji.map((emoji, i) => (
+                    {emoji.map((item, i) => (
                         <span key={i} className={`emoji-slot ${i < revealed ? "show" : "hidden"}`}>
                             {i < revealed ? (
-                                <span className="emoji">{emoji}</span>
+                                isImage(item) ? (
+                                    <img
+                                        src={resolveImagePath(item)}
+                                        alt="custom emoji"
+                                        className="emoji-custom-icon"
+                                    />
+                                ) : (
+                                    <span className="emoji">{item}</span>
+                                )
                             ) : (
                                 <img src={questionIcon} alt="Hidden" className="hidden-icon" />
                             )}
