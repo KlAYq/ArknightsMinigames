@@ -159,7 +159,6 @@ function Emoji() {
             if (gameMode === "daily") {
                 const newStats = recordWin("emoji", newGuesses.length);
                 setStats(newStats);
-                setIsStatsOpen(true);
             }
         }
     };
@@ -293,7 +292,7 @@ function Emoji() {
                 stats={stats}
                 modeName="Emoji"
                 onSwitchToInfinite={() => handleSwitchMode("infinite")}
-                isDailyCompleted={status === "correct" && gameMode === "daily"}
+            // isDailyCompleted={status === "correct" && gameMode === "daily"}
             />
 
             <div className="guess-panel">

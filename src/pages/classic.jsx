@@ -126,9 +126,6 @@ function Classic() {
       winTimerRef.current = setTimeout(() => {
         setStatus("correct");
         setShowConfetti(true);
-        if (gameMode === "daily") {
-          setIsStatsOpen(true);
-        }
       }, 3600);
     }
   };
@@ -183,6 +180,7 @@ function Classic() {
       // Load daily mode from localStorage
       const dailyTarget = getDailyOperator(operators, "classic");
       setTargetOperator(dailyTarget);
+      console.log("correct guesses: " + dailyTarget.name)
       const savedDaily = loadDailyState("classic");
       if (savedDaily && savedDaily.targetName === dailyTarget.name) {
         // Strip isNew so swapping back won't re-animate
@@ -303,7 +301,7 @@ function Classic() {
         stats={stats}
         modeName="Classic"
         onSwitchToInfinite={() => handleSwitchMode("infinite")}
-        isDailyCompleted={status === "correct" && gameMode === "daily"}
+      // isDailyCompleted={status === "correct" && gameMode === "daily"}
       />
 
       <div className="classic-panel">
