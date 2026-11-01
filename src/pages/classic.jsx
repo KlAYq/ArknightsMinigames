@@ -180,7 +180,6 @@ function Classic() {
       // Load daily mode from localStorage
       const dailyTarget = getDailyOperator(operators, "classic");
       setTargetOperator(dailyTarget);
-      console.log("correct guesses: " + dailyTarget.name)
       const savedDaily = loadDailyState("classic");
       if (savedDaily && savedDaily.targetName === dailyTarget.name) {
         // Strip isNew so swapping back won't re-animate
