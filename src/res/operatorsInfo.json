@@ -5260,32 +5260,6 @@
     ],
     "release_year": 2020
   },
-  "char_512_aprot": {
-    "name": "Shalem",
-    "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_512_aprot.png",
-    "emojis": [
-      [
-        "",
-        "",
-        "",
-        ""
-      ]
-    ],
-    "gender": "Female",
-    "position": "Melee",
-    "race": "Undisclosed",
-    "tags": [
-      "DPS",
-      "Defense"
-    ],
-    "main_faction": [
-      "Rhodes Island"
-    ],
-    "skill_type": [
-      "Auto Recovery"
-    ],
-    "release_year": 2022
-  },
   "char_4025_aprot2": {
     "name": "Shalem",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4025_aprot2.png",
@@ -10743,7 +10717,7 @@
     "release_year": 2025
   },
   "char_1037_amiya3": {
-    "name": "Amiya",
+    "name": "Amiya (Medic)",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1037_amiya3.png",
     "emojis": [
       [
@@ -10869,7 +10843,7 @@
     "release_year": 2026
   },
   "char_1001_amiya2": {
-    "name": "Amiya",
+    "name": "Amiya (Guard)",
     "url": "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_1001_amiya2.png",
     "emojis": [
       [

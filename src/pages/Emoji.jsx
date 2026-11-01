@@ -6,17 +6,22 @@ import operatorData from "../res/operatorsInfo.json";
 import questionIcon from "../res/questionMark.png";
 import { VStack, HStack, Text } from "@chakra-ui/react";
 
+import StatsModal from "../components/StatsModal";
+import {
+    getDailyDateString,
+    getDailyOperator,
+    getDailyEmojiOrder,
+    getTimeUntilNextDaily,
+    getStats,
+    recordWin,
+    loadDailyState,
+    saveDailyState,
+} from "../utils/dailyStorage";
+
 const isImage = (val) => {
-    if (!val || typeof val !== "string") {
-        console.log("is emoji")
-        return false;
-    }
+    if (!val || typeof val !== "string") return false;
     const trimmed = val.trim();
-    if (!trimmed) {
-        console.log("is emoji")
-        return false;
-    }
-    console.log("is img")
+    if (!trimmed) return false;
     return (
         /\.(png|jpe?g|svg|webp|gif|ico)$/i.test(trimmed) ||
         trimmed.startsWith("http://") ||
@@ -26,7 +31,6 @@ const isImage = (val) => {
 };
 
 const resolveImagePath = (val) => {
-    console.log("resolving img: " + val);
     if (!val || typeof val !== "string") return "";
     let clean = val.trim();
     if (clean.startsWith("http://") || clean.startsWith("https://")) {
@@ -46,108 +50,279 @@ const resolveImagePath = (val) => {
     return `${publicUrl}${clean}`;
 };
 
+const shuffleArray = (arr) => {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+};
+
 function Emoji() {
+    const [gameMode, setGameMode] = useState("daily"); // "daily" | "infinite"
     const [revealed, setRevealed] = useState(1);
     const [guesses, setGuesses] = useState([]);
     const [status, setStatus] = useState("playing"); // "playing" | "correct"
+    const [showConfetti, setShowConfetti] = useState(false);
     const [operators, setOperators] = useState([]);
     const [correctAnswer, setCorrectAnswer] = useState(null);
+    const [targetOperator, setTargetOperator] = useState(null);
     const [emoji, setEmoji] = useState([null]);
+    const [stats, setStats] = useState(() => getStats("emoji"));
+    const [isStatsOpen, setIsStatsOpen] = useState(false);
+    const [dailyCountdown, setDailyCountdown] = useState(getTimeUntilNextDaily());
+
+    // In-memory state for infinite mode
+    const [infiniteState, setInfiniteState] = useState({
+        target: null,
+        correctAnswer: null,
+        emoji: [],
+        revealed: 1,
+        guesses: [],
+        status: "playing",
+    });
+
+    // Ticking countdown timer
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setDailyCountdown(getTimeUntilNextDaily());
+        }, 1000);
+        return () => clearInterval(timer);
+    }, []);
+
+    // Load operators on mount and initialize Daily mode by default
     useEffect(() => {
         const list = Object.entries(operatorData).map(([id, info]) => ({
             id,
             name: info.name,
             url: info.url,
-            emojis: info.emojis
+            emojis: info.emojis,
         }));
         setOperators(list);
-        const random = list[Math.floor(Math.random() * list.length)];
-        setCorrectAnswer(random.name);
-        const chosen = random.emojis[Math.floor(Math.random() * random.emojis.length)];
-        // shuffle chosen emoji order
-        const shuffleArray = (arr) => {
-            const a = [...arr];
-            for (let i = a.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [a[i], a[j]] = [a[j], a[i]];
-            }
-            return a;
-        };
-        setEmoji(shuffleArray(chosen));
+
+        // Deterministically pick daily operator for Emoji mode (different from classic)
+        const dailyTarget = getDailyOperator(list, "emoji");
+        const dailyEmojiSet = (dailyTarget && dailyTarget.emojis && dailyTarget.emojis[0]) || ["", "", "", ""];
+        const orderedDailyEmojis = getDailyEmojiOrder(dailyEmojiSet);
+
+        setTargetOperator(dailyTarget);
+        setCorrectAnswer(dailyTarget.name);
+
+        const savedDaily = loadDailyState("emoji");
+        if (savedDaily && savedDaily.targetName === dailyTarget.name) {
+            setEmoji(savedDaily.emoji || orderedDailyEmojis);
+            setRevealed(savedDaily.revealed || 1);
+            setGuesses(savedDaily.guesses || []);
+            setStatus(savedDaily.status || "playing");
+        } else {
+            setEmoji(orderedDailyEmojis);
+            setRevealed(1);
+            setGuesses([]);
+            setStatus("playing");
+        }
     }, []);
 
     const handleGuess = (guess) => {
+        const isCorrect = guess.name.toLowerCase() === correctAnswer.toLowerCase();
         const newGuess = {
             text: guess.name,
-            correct: guess.name.toLowerCase() === correctAnswer.toLowerCase(),
-            url: guess.url
+            correct: isCorrect,
+            url: guess.url,
         };
 
-        setGuesses([...guesses, newGuess]);
+        const newGuesses = [...guesses, newGuess];
+        setGuesses(newGuesses);
 
-        if (newGuess.correct) {
+        let newRevealed = revealed;
+        if (!isCorrect && revealed < emoji.length) {
+            newRevealed = revealed + 1;
+            setRevealed(newRevealed);
+        }
+
+        // Save progress if in Daily mode
+        if (gameMode === "daily") {
+            saveDailyState("emoji", {
+                date: getDailyDateString(),
+                targetId: targetOperator?.id,
+                targetName: correctAnswer,
+                emoji,
+                revealed: newRevealed,
+                guesses: newGuesses,
+                status: isCorrect ? "correct" : "playing",
+            });
+        }
+
+        if (isCorrect) {
             setStatus("correct");
-        } else if (revealed < emoji.length) {
-            setRevealed(revealed + 1);
+            setShowConfetti(true);
+            if (gameMode === "daily") {
+                const newStats = recordWin("emoji", newGuesses.length);
+                setStats(newStats);
+                setIsStatsOpen(true);
+            }
+        }
+    };
+
+    const handleSwitchMode = (newMode) => {
+        if (newMode === gameMode) return;
+        setShowConfetti(false);
+
+        if (newMode === "infinite") {
+            // Save current daily state to localStorage (preserves daily progress)
+            if (gameMode === "daily" && targetOperator) {
+                saveDailyState("emoji", {
+                    date: getDailyDateString(),
+                    targetId: targetOperator.id,
+                    targetName: correctAnswer,
+                    emoji,
+                    revealed,
+                    guesses,
+                    status,
+                });
+            }
+
+            // Restore or generate infinite mode
+            if (infiniteState.target) {
+                setTargetOperator(infiniteState.target);
+                setCorrectAnswer(infiniteState.correctAnswer);
+                setEmoji(infiniteState.emoji);
+                setRevealed(infiniteState.revealed);
+                setGuesses(infiniteState.guesses);
+                setStatus(infiniteState.status);
+            } else {
+                const valid = operators.filter(
+                    (op) => op.emojis && op.emojis.some((set) => Array.isArray(set) && set.some((e) => e && e.trim() !== ""))
+                );
+                const pool = valid.length > 0 ? valid : operators;
+                const random = pool[Math.floor(Math.random() * pool.length)];
+                const chosenEmoji = random.emojis[Math.floor(Math.random() * random.emojis.length)];
+                const shuffled = shuffleArray(chosenEmoji);
+
+                setTargetOperator(random);
+                setCorrectAnswer(random.name);
+                setEmoji(shuffled);
+                setRevealed(1);
+                setGuesses([]);
+                setStatus("playing");
+                setInfiniteState({
+                    target: random,
+                    correctAnswer: random.name,
+                    emoji: shuffled,
+                    revealed: 1,
+                    guesses: [],
+                    status: "playing",
+                });
+            }
+            setGameMode("infinite");
+        } else {
+            // Switching to daily
+            // Save infinite mode in memory
+            setInfiniteState({
+                target: targetOperator,
+                correctAnswer,
+                emoji,
+                revealed,
+                guesses,
+                status,
+            });
+
+            // Load daily mode from localStorage
+            const dailyTarget = getDailyOperator(operators, "emoji");
+            const dailyEmojiSet = (dailyTarget && dailyTarget.emojis && dailyTarget.emojis[0]) || ["", "", "", ""];
+            const orderedDailyEmojis = getDailyEmojiOrder(dailyEmojiSet);
+            const savedDaily = loadDailyState("emoji");
+
+            setTargetOperator(dailyTarget);
+            setCorrectAnswer(dailyTarget.name);
+
+            if (savedDaily && savedDaily.targetName === dailyTarget.name) {
+                setEmoji(savedDaily.emoji || orderedDailyEmojis);
+                setRevealed(savedDaily.revealed || 1);
+                setGuesses(savedDaily.guesses || []);
+                setStatus(savedDaily.status || "playing");
+            } else {
+                setEmoji(orderedDailyEmojis);
+                setRevealed(1);
+                setGuesses([]);
+                setStatus("playing");
+            }
+            setGameMode("daily");
         }
     };
 
     const handlePlayAgain = () => {
-        // reset UI state
-        setRevealed(1);
-        setGuesses([]);
-        setStatus("playing");
+        if (gameMode === "infinite") {
+            setShowConfetti(false);
+            const valid = operators.filter(
+                (op) => op.emojis && op.emojis.some((set) => Array.isArray(set) && set.some((e) => e && e.trim() !== ""))
+            );
+            const pool = valid.length > 0 ? valid : operators;
+            const random = pool[Math.floor(Math.random() * pool.length)];
+            const chosenEmoji = random.emojis[Math.floor(Math.random() * random.emojis.length)];
+            const shuffled = shuffleArray(chosenEmoji);
 
-        // pick a new random operator and emoji
-        if (operators && operators.length > 0) {
-            const random = operators[Math.floor(Math.random() * operators.length)];
+            setTargetOperator(random);
             setCorrectAnswer(random.name);
-            const newEmoji = random.emojis[Math.floor(Math.random() * random.emojis.length)];
-            // shuffle the emoji reveal order
-            const shuffleArray = (arr) => {
-                const a = [...arr];
-                for (let i = a.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [a[i], a[j]] = [a[j], a[i]];
-                }
-                return a;
-            };
-            setEmoji(shuffleArray(newEmoji));
-        } else {
-            const list = Object.entries(operatorData).map(([id, info]) => ({
-                id,
-                name: info.name,
-                url: info.url,
-                emojis: info.emojis,
-            }));
-            if (list.length > 0) {
-                setOperators(list);
-                const random = list[Math.floor(Math.random() * list.length)];
-                setCorrectAnswer(random.name);
-                const newEmoji = random.emojis[Math.floor(Math.random() * random.emojis.length)];
-                const shuffleArray = (arr) => {
-                    const a = [...arr];
-                    for (let i = a.length - 1; i > 0; i--) {
-                        const j = Math.floor(Math.random() * (i + 1));
-                        [a[i], a[j]] = [a[j], a[i]];
-                    }
-                    return a;
-                };
-                setEmoji(shuffleArray(newEmoji));
-            }
+            setEmoji(shuffled);
+            setRevealed(1);
+            setGuesses([]);
+            setStatus("playing");
+            setInfiniteState({
+                target: random,
+                correctAnswer: random.name,
+                emoji: shuffled,
+                revealed: 1,
+                guesses: [],
+                status: "playing",
+            });
         }
     };
 
-    const availableOperators = operators.filter(op =>
-        !guesses.some(g => g.text.toLowerCase() === op.name.toLowerCase())
+    const availableOperators = operators.filter(
+        (op) => !guesses.some((g) => g.text.toLowerCase() === op.name.toLowerCase())
     );
 
     return (
         <div className="guess-page">
-            <Confetti active={status === "correct"} />
+            <Confetti active={showConfetti} />
+
+            <StatsModal
+                isOpen={isStatsOpen}
+                onClose={() => setIsStatsOpen(false)}
+                stats={stats}
+                modeName="Emoji"
+                onSwitchToInfinite={() => handleSwitchMode("infinite")}
+                isDailyCompleted={status === "correct" && gameMode === "daily"}
+            />
+
             <div className="guess-panel">
+                <div className="mode-switch-bar">
+                    <div className="mode-tabs">
+                        <button
+                            className={`mode-tab-btn ${gameMode === "daily" ? "active daily" : ""}`}
+                            onClick={() => handleSwitchMode("daily")}
+                        >
+                            Daily
+                        </button>
+                        <button
+                            className={`mode-tab-btn ${gameMode === "infinite" ? "active infinite" : ""}`}
+                            onClick={() => handleSwitchMode("infinite")}
+                        >
+                            Infinite
+                        </button>
+                    </div>
+
+                    <button
+                        className="stats-trigger-btn"
+                        onClick={() => setIsStatsOpen(true)}
+                    >
+                        Stats
+                    </button>
+                </div>
+
                 <h1 className="title">Which operator do these emojis describe?</h1>
-                <h3 style={{ color: "grey" }}> Some operator still don't have emojis set yet, so you will see blank emoji</h3>
+
                 <div className="emoji-container">
                     {emoji.map((item, i) => (
                         <span key={i} className={`emoji-slot ${i < revealed ? "show" : "hidden"}`}>
@@ -168,12 +343,51 @@ function Emoji() {
                     ))}
                 </div>
 
-                {status === "playing" && (
+                {status !== "correct" && (
                     <GuessInput
                         onGuess={handleGuess}
                         disabled={status !== "playing"}
                         operators={availableOperators}
                     />
+                )}
+
+                {status === "correct" && gameMode === "daily" && (
+                    <div className="daily-win-banner">
+                        <div className="daily-win-title">
+                            🎉 Correct! Today's Operator is {correctAnswer}!
+                        </div>
+                        <div className="daily-win-stats-preview">
+                            <span>Guessed in <strong>{guesses.length}</strong> {guesses.length === 1 ? "try" : "tries"}</span>
+                            <span>•</span>
+                            <span>🔥 Streak: <strong>{stats.currentStreak}</strong></span>
+                            <span>•</span>
+                            <span>🏆 Max: <strong>{stats.maxStreak}</strong></span>
+                        </div>
+                        <div className="daily-win-timer">
+                            Next Daily Operator in <strong>{dailyCountdown}</strong>
+                        </div>
+                        {/* <div className="daily-win-actions">
+                            <button
+                                onClick={() => setIsStatsOpen(true)}
+                                className="stats-btn-close"
+                            >
+                                Stats
+                            </button>
+                        </div> */}
+                    </div>
+                )}
+
+                {status === "correct" && gameMode === "infinite" && (
+                    <div className="game-complete">
+                        <p className="success-message" style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+                            🎉 Correct! The operator is {correctAnswer}.
+                        </p>
+                        <div style={{ display: "flex", gap: "12px", justifyContent: "center", marginTop: "12px", flexWrap: "wrap" }}>
+                            <button onClick={handlePlayAgain} className="play-again">
+                                Play Again
+                            </button>
+                        </div>
+                    </div>
                 )}
             </div>
 
@@ -186,21 +400,10 @@ function Emoji() {
                         >
                             <img src={g.url} alt={g.text} className="suggestion-avatar" />
                             <Text textAlign={"left"}> {g.text} </Text>
-
                         </HStack>
-
                     ))}
                 </VStack>
             </div>
-
-            {status === "correct" && (
-                <div className="game-complete">
-                    <p> Correct! The operator is {correctAnswer}.</p>
-                    <button onClick={handlePlayAgain} className="play-again">
-                        Play Again
-                    </button>
-                </div>
-            )}
         </div>
     );
 }
